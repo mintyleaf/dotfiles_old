@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="favicon.png" type="image/icon">
+    </head>
+    <body>
+			<div id="main-container">
+            <script type="text/javascript">
+                function submit() {
+                    window.location.href = "https://www.google.com/search?q=" + document.getElementById('search').value;
+                }
+            </script>
+            <div id="content-container">
+
+                <form action="javascript: submit();">
+                    <input id="search" type="text" placeholder="Search . . ."  autofocus>
+                </form>
+                <div id="column-container">
+                    <ul>
+                        <li>#1</li>
+                        <li><a href="https://github.com">Github</a></li>
+                        <li><a href="https://bitbucket.com">Bitbucket</a></li>
+                        <li><a href="https://wiki.archlinux.org">Arch Wiki</a></li>
+                    </ul>
+                    <ul>    
+                        <li>#2</li>
+                        <li><a href="https://youtube.com">Youtube</a></li>
+                        <li><a href="https://pinterest.com">Pinterest</a></li>
+                        <li><a href="https://instagram.com">Instagram</a></li>
+                    </ul>
+                    <ul>    
+                        <li>#3</li>
+                        <li><a href="https://vk.com/plattenbauten">Plattenbau</a></li>
+                        <li><a href="https://vk.com/unixporn">*nix porn</a></li>
+                        <li><a href="https://vk.com/godot_engine">Godot VK</a></li>
+                    </ul>
+                    <ul>    
+                        <li>#4</li>
+                        <li><a href="https://openweathermap.org/city/573648">Openweather</a></li>
+                        <li><a href="http://docs.godotengine.org">Godot Docs</a></li>
+                        <li><a href="https://last.fm/user/mintyLeaf_dev">last.fm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

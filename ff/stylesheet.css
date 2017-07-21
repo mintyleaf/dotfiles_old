@@ -1,0 +1,88 @@
+
+/* 
+ * Minimal Firefox Homepage
+ *
+ * Author: clyde80
+ * Website: https://github.com/clyde80
+ * Created on: February 05, 2017
+ * Updated on: February 06, 2017
+ *
+ * Colors:
+ * Red: #FF5964
+ * Orange: #FF7E4A
+ * White: #FFFFFA
+ * Black: #161916
+ *
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #383838;
+    color: #FFFFFA;
+}
+
+/* 
+ * Use the following code to center stuff in browser window in future.
+ *
+ * Source: (https://www.w3.org/Style/Examples/007/center-example)
+ */
+
+#main-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: table;
+}
+
+#content-container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* End of centering stuff in browser window. */
+
+#search {
+    width: 400px;
+    padding: 5px 5px;
+    border: 0px;
+    border-bottom: 1px solid #848687;
+    color: #999999;
+    background-color: #383838;
+    font-family: "Cantarell";
+    font-size: 15px;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+#search:focus {
+    color: #FFFFFA;
+    border-bottom: 1px solid #FFFFFA;
+}
+
+#column-container ul {
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+    vertical-align: top;
+}
+
+#column-container ul li:first-child {
+    font-family: "Cantarell";
+    font-size: 18px;
+    font-weight: 100;
+    color: #999999;
+}
+
+#column-container ul li a {
+    font-family: "Cantarell";
+    font-size: 12px;
+    color: #FFFFFA;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#column-container ul li a:hover {
+    color: #999999;
+}
