@@ -1,0 +1,36 @@
+#!/bin/python
+
+import urllib.request, json
+
+city = "117574"
+api_key = "8eb1b4c2ce59a94671ef16ada9fbb2bd"
+units = "Metric"
+unit_key = "C"
+
+d_icons = [u'\uf00d',u'\uf002',u'\uf041',u'\uf013',u'\uf009',u'\uf008',u'\uf010',u'\uf00a',u'\uf003']
+n_icons = [u'\uf02e',u'\uf086',u'\uf041',u'\uf013',u'\uf037',u'\uf036',u'\uf03b',u'\uf038',u'\uf04a']
+
+d_data = ['01d','02d','03d','04d','09d','10d','11d','13d','50d']
+n_data = ['01n','02n','03n','04n','09n','10n','11n','13n','50n']
+
+
+weather = eval(str(urllib.request.urlopen("http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units={}".format(city, api_key, units)).read())[2:-1])
+
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]))
+icon = weather["weather"][0]["icon"]
+
+
+# Худший костыль на диком западе. Мне это лень переписывать.
+# Да простит меня читающий этот скрипт человек.
+
+if icon in d_data:
+	id = d_data.index(icon)
+	icon = d_icons[id]
+elif icon in n_data:
+	id = n_data.index(icon)
+	icon = n_icons[id]
+else:
+	icon = ''
+
+print("%s  %s, %i °%s" % (icon, info, temp, unit_key))

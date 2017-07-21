@@ -1,0 +1,46 @@
+#! /bin/sh
+
+sxhkd &
+sh ~/.config/polybar/launch.sh &
+feh --bg-fill ~/bg.jpg &
+setxkbmap -layout us,ru -option grp:alt_shift_toggle &
+redshift -l 55.5:37.5 &
+mpc load default &
+caffeine -a &
+sh -c 'sleep 5; exec amixer -c0 set 'Headphone' on 100%' &
+python ~/mpd_current.py &
+sh -c 'sleep 5; exec xsetroot -cursor_name left_ptr' &
+
+bspc monitor -d browser mpd code term games 6
+
+bspc config border_width         0
+bspc config window_gap		 7
+bspc config top_padding 	 34
+bspc config click_to_focus	 true
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config presel_feedback_color '#999999'
+bspc config pointer_modifier	 shift
+
+bspc rule -a URxvt:neofetch -o state=floating
+bspc rule -a URxvt:ranger -o state=floating
+bspc rule -a qjackctl -o state=floating
+bspc config -d mpd window_gap 267
+bspc config -d mpd top_padding -34
+
+# mpd layout
+bspc desktop -f mpd 
+urxvt -name ncmpcpp -e ncmpcpp &
+sleep 1
+bspc node -p east &
+sleep 1
+urxvt -name vis -b 0 -e vis &
+sleep 1
+bspc node -f west
+sleep 1
+bspc desktop -f browser
+firefox &
+sleep 3
+bspc node -o 0.74
+~/Telegram/Telegram &
