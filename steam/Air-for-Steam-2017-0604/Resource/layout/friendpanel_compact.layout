@@ -1,0 +1,12 @@
+resource/layout/friendpanel_compact.layout {
+
+	styles {
+	}
+
+	layout {
+		place { control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel x=0 y=1 spacing=4 }
+		place { control=StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore start=FriendsNameInstanceLabel x=8 spacing=8 }
+
+		place { control=CompactSeparatorLabel,MenuButton height=0 width=0 }
+	}
+}

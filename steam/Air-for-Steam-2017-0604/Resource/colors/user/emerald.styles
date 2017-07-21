@@ -1,0 +1,11 @@
+resource/colors/user/emerald.styles {
+
+	colors {
+		Focus="46 204 113 255"
+		Focus2="74 241 149 255"
+		Focus3="42 192 106 255"
+		Focus4="42 192 106 150"
+		A2TextFocus="Focus"
+		A2TextFocusHover="Focus2"
+	}
+}

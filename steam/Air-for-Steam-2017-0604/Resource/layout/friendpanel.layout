@@ -1,0 +1,45 @@
+resource/layout/friendpanel.layout {
+
+	styles {
+		SelfPanel { }
+
+		CFriendsPanel { }
+
+		WebStatusStyle
+			{ image="graphics/friends/status_web" }
+
+		BigPictureStatusStyle
+			{ image="graphics/friends/status_bigpic" }
+
+		MobileStatusStyle
+			{ image="graphics/friends/status_mobile" }
+
+		WebStatusStyleInGame
+			{ image="graphics/friends/status_web_ingame" }
+
+		BigPictureStatusStyleInGame
+			{ image="graphics/friends/status_bigpic_ingame" }
+
+		MobileStatusStyleInGame
+			{ image="graphics/friends/status_mobile_ingame" }
+	}
+
+	layout {
+		place { control=AvatarOverlayImage y=2 width=46 height=46 }
+		place { control=AvatarImage x=7 y=9 width=32 height=32 }
+
+		place { control=NameLabel,FriendsNameInstanceLabel,ClanStatusImage x=53 y=9 spacing=4 }
+
+		place { control=StatusLabel,GameLabel x=53 y=25 spacing=8 }
+		place { control=AcceptLink,IgnoreLink,BlockLink x=53 y=25 spacing=8 }
+		place { control=ControlPanelLink x=53 y=25 }
+
+		place { control=BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame start=GameLabel x=8 }
+
+		place { control=SuggestedImage,SuggestedLabel x=53 y=9 spacing=4 }
+		place { control=SuggestedInvite,SuggestedIgnore x=53 y=25 spacing=8 }
+		place { control=InviteToGameButton align=right y=4 } //this control is shown in the invite-to-game dialog in the overlay
+
+		place { control=MenuButton height=0 width=0 }
+	}
+}

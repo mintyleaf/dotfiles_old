@@ -1,0 +1,24 @@
+resource/layout/gamespage_grid_chrome.layout {
+
+	styles {
+		GridItemChrome { }
+		ChromeBorderItem { }
+		GridNavDivider { }
+
+		CUILaunchButton {
+			padding-left=30 padding-right=30 padding-top=14 padding-bottom=14
+			bgcolor=AD200
+		}
+
+		"GameItem_Uninstalled CUILaunchButton" {
+		}
+	}
+
+	layout {
+		region { name=touchscreen height=80 width=max align=bottom }
+			place { control=launch region=touchscreen align=top-center}
+			place { control=chromeborder width=max height=max }
+
+		place { control=divider,details height=0 width=0 }
+	}
+}

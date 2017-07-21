@@ -1,0 +1,23 @@
+resource/layout/overlaydesktop.layout {
+
+	styles {
+	}
+
+	layout {
+		region { name=overlay height=max width=max margin-left=70 margin-right=70 }
+			place { control=FriendsDetailPanel width=301 }
+			place { control=AchievementsDetailPanel width=207 }
+			place { control=CommunityHubDetailPanel width=191 }
+			place { control=ScreenshotsDetailPanel width=174 }
+			place { control=FriendsDetailPanel,AchievementsDetailPanel,CommunityHubDetailPanel,ScreenshotsDetailPanel region=overlay y=179 height=30 align=left }
+
+			place { control=SessionText,ForeverText,Clock region=overlay y=87 height=20 dir=down x=6 }
+			place { control=Clocksuffix region=overlay start=Clock y=2 }
+
+			place { control=GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton region=overlay y=269 x=6 dir=down height=20 }
+
+			place { control=BroadcastDetailPanel align=top-center y=14 height=40 width=360 }
+
+		place { control=TwoWeeksText,GuidesDetailPanel,NewsDetailPanel,CommunityDiscussionsDetailPanel height=0 width=0 margin-left=-9999 }
+	}
+}

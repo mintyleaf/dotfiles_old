@@ -1,0 +1,29 @@
+"resource/layout/parentallockdialog.layout"
+{
+	styles
+	{
+		ParentalLockDialog {
+			minimum-width = 400
+			minimum-height = 250
+		}
+
+		Hey { }
+		Key { textcolor=none }
+	}
+	
+	layout
+	{
+		region { name="top" width=max height=260 margin=10 margin-top=40}
+		region { name="middle" width=max height=150 y=100 margin=10 }
+		region { name="bottom" width=max align=bottom height=36 align="bottom" }
+
+		place { control="Instructions" region=top x=20 y=10 spacing=8 width=max }
+		
+		place { 
+			control="OK,Cancel" 
+			region="bottom" width=92 height=25 align=right margin-right=10 margin-top=0 margin-bottom=2 spacing=10
+			}
+		}
+	
+		place { control="KeyImage" height=0 width=0 }
+}

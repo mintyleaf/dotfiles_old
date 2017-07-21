@@ -1,0 +1,22 @@
+resource/layout/settingsdialog.layout {
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize,frame_maximize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=buttons width=max height=40 align=bottom }
+		region { name=body margin-bottom=50 margin-top=25 margin-left=18 margin-right=26 }
+
+		place { control=settingslist region=body width=164 height=max }
+		place { control=sheet start=settingslist region=body width=max height=max y=25 x=26 }
+		place {
+			control=okbutton,cancelbutton
+			region=buttons
+			align=right
+			margin-right=26
+			spacing=10
+		}
+	}
+}

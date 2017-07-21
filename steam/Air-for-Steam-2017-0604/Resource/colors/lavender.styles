@@ -1,0 +1,22 @@
+resource/colors/lavender.styles {
+
+	colors {
+		Focus="92 107 192 255"
+			//material 400
+
+		Focus2="121 134 203 255"
+			//lighter hue (material 300)
+
+		Focus3="86 100 179 255"
+			//darker hue (-5% brightness)
+
+		Focus4="86 100 179 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

@@ -1,0 +1,17 @@
+resource/layout/gameproperties_general.layout {
+
+	layout {
+		region { name=box height=max width=max y=30 margin-left=16 }
+			place { control=EnableOverlayCheck,EnableDesktopGameTheater region=box dir=down width=max }
+			place { control=LaunchOptionsButton,CreateDesktopShortcutButton region=box start=EnableDesktopGameTheater dir=down y=20 }
+			place { control=HomepageLabelName,DeveloperLabelName,ManualLabelName region=box start=CreateDesktopShortcutButton y=30 spacing=10 dir=down }
+			place { control=HomepageLabel,DeveloperLabel,ManualLabel,NoManualLabel region=box start=CreateDesktopShortcutButton y=30 spacing=10 x=84 dir=down }
+
+		place { control=FamilySharingUnsupportedLabel region=box start=ManualLabelName dir=down spacing=10 y=30 }
+
+		//no idea what this control does
+		place { control=ExternalSignupLabel,ExternalSignupButton region=box start=FamilySharingUnsupportedLabel dir=down spacing=5 y=30 }
+
+		place { control=Divider1 height=0 width=0 margin-left=-9999 }
+	}
+}

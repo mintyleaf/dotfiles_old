@@ -1,0 +1,22 @@
+resource/colors/cinnabar.styles {
+
+	colors {
+		Focus="232 78 64 255"
+			//material 400
+
+		Focus2="243 108 96 255"
+			//lighter hue (material 300)
+
+		Focus3="219 75 61 255"
+			//darker hue (-5% brightness)
+
+		Focus4="219 75 61 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

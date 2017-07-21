@@ -1,0 +1,22 @@
+resource/colors/slate.styles {
+
+	colors {
+		Focus="96 125 139 255"
+			//material 500
+
+		Focus2="144 164 174 255"
+			//lighter hue (material 300)
+
+		Focus3="84 110 122 255"
+			//darker hue (material 600)
+
+		Focus4="84 110 122 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

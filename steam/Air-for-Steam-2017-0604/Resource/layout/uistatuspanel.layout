@@ -1,0 +1,28 @@
+resource/layout/uistatuspanel.layout {
+
+	styles {
+		CUIStatusPanel {
+		}
+
+		SlimProgressBar {
+			textcolor=none
+			bgcolor=none
+			render {
+				0="image( x0, y0 - 78, x1, y1, graphics/material/download )"
+
+				//only shows up during active downloads
+				//!! text does not appear for workshop downloads
+			}
+		}
+
+		StatusLabel { textcolor=none }
+		StatusLabelDim { textcolor=none }
+	}
+
+	layout {
+		place { control=StatusProgressbar align=bottom width=max height=0 }
+		place { control=StatusComplete x=10 y=6 width=54 height=54 }
+
+		place { control=StatusPaused,StatusDownloading height=0 width=0 }
+	}
+}

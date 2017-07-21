@@ -1,0 +1,100 @@
+resource/layout/screenshotmanager.layout {
+
+	styles {
+		ThumbnailUnpublished { }
+		ThumbnailUploaded { }
+		ThumbnailPublished { }
+
+		ThumbnailSelected {
+			render_bg {
+				0="fill( x0, y0, x1, y1, black )"
+			}
+			render {
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/screenshot_check )"
+			}
+		}
+
+		DarkRegionDetails {
+			bgcolor=none
+		}
+
+		SSDetails {
+			minimum-width=320
+			minimum-height=180
+		}
+
+		CScreenshotCaptionEntry {
+			inset-left=0
+		}
+
+		publishcaption { }
+		publishcaptionprompt { }
+		publishcharsleft { }
+
+		publishcharsleft_toomanychars {
+			textcolor=red
+		}
+
+		WrapPanel {
+			inset-top=-1
+		}
+
+		gameselector {
+			minimum-width=220
+			render_bg { }
+		}
+
+		ScreenshotLoadingThrobber {
+			minimum-width=100
+			minimum-height=75
+			bgcolor=black
+		}
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=nav height=50 width=max }
+		region { name=buttons height=40 width=max y=60 }
+		region { name=body height=max width=max y=100 }
+
+		place [!$OSX] { control=game_selector region=nav y=10 x=16 }
+		place [$OSX] { control=game_selector region=nav y=10 x=76 }
+
+		region { name=list region=body x=26 width=max margin-right=366 }
+
+		place {	control=grid region=list width=max height=max margin-bottom=-3 }
+		place { control=no_screenshots region=list y=70 align=top-center }
+
+		region { name=details region=body width=366 height=max align=right margin-right=26 margin-left=20 }
+
+		place { control=DarkRegionDetails 				region=details width=max height=max z=-1 }
+		place { control=SSDetails 								region=details y=60 width=320 height=180 align=top-center }
+		place { control=SSDate 										region=details y=22 }
+		place { control=SSSize,SSSizeOriginal 		region=details y=22 align=right }
+
+		place { control=spoiler_checkbox 					region=details start=SSDetails y=10 dir=down }
+
+		place { control=publish_caption 					region=details start=spoiler_checkbox dir=down height=36 width=max y=10 }
+		place { control=publish_charsleft 				region=details start=publish_caption dir=down margin-top=6 align=right }
+
+		place { control=details_caption 					region=details start=SSDetails y=20 width=max dir=down } //published caption
+
+		//place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
+
+		place { control=multi_img_selected 																							region=details y=120 align=top-center }
+		place { control=multi_img_upload_size,multi_img_upload_size_info 								region=details y=149 align=top-center spacing=5 }
+		place { control=multi_img_storage_remaining,multi_img_storage_remaining_info 		region=details y=168 align=top-center spacing=5 }
+
+		place { control=file_not_loaded_label 				region=details y=140 align=top-center }
+
+		place { control=multiselect_button,view_local_library_button,view_screenshots 		region=buttons align=left spacing=10 margin-left=26 margin-bottom=10 }
+		place { control=delete_button,details_button,publish_button 											region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+		place { control=multi_img_delete,multi_img_upload 																region=buttons align=right spacing=10 margin-right=26 margin-bottom=10 }
+
+		place { control=multi_img,multi_img_count,instr_no_selection,instr_no_selection_title,selectorlabel,null_placer height=0 width=0 margin-left=-9999 }
+	}
+}

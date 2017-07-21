@@ -1,0 +1,22 @@
+resource/colors/lilac.styles {
+
+	colors {
+		Focus="126 87 194 255"
+			//material 400
+
+		Focus2="149 117 205 255"
+			//lighter hue (material 300)
+
+		Focus3="118 81 181 255"
+			//darker hue (-5% brightness)
+
+		Focus4="118 81 181 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

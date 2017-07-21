@@ -1,0 +1,42 @@
+resource/layout/overlaydashboard_lores.layout {
+
+	styles {
+		overlaymain {
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 234, A2OverlayBar )"
+				1="fill( x0, y0 + 234, x1, y1, A2OverlayBackground )"
+			}
+			render {
+				0="image_scale( x0, y0 + 234, x1, y0 + 240, graphics/material/shadow_horiz )"
+			}
+		}
+
+		OverlayURLLabel {
+			textcolor=none
+			image="graphics/onfocus/overlay_close"
+		}
+
+		OverlayURLLabel:hover {
+			image="graphics/onfocus/overlay_close_hover"
+		}
+
+		topbar {
+			font-family=condensed
+			font-size=54
+			font-weight=700
+			font-style=uppercase
+			textcolor=A2TextOverlay
+
+			//game name
+		}
+	}
+
+	layout {
+		region { name=overlay height=240 width=max margin-left=70 margin-right=60 }
+			place { control=gamename region=overlay align=left y=30 }
+			place { control=TaskbarPanel region=overlay width=200 height=max align=right end-right=CloseButton margin-right=50 }
+			place { control=CloseButton region=overlay align=right height=40 width=40 y=97 }
+
+		place { control=TopFadePanel,PowerMeterDim,BottomFadePanel,HotkeyLabel,HotkeyExplain height=0 width=0 }
+	}
+}

@@ -1,0 +1,52 @@
+dark.styles {
+
+	include "resource/styles/_vars.styles"
+
+	colors {
+		A2Background						"Air40"								//client bg
+		A2Ribbon								"Air55"								//bg for section emphasis (ie. left side of settings dialog)
+		A2Divider								"Air65"								//client dividers
+		A2Snackbar							"Air75"								//bg for download notification
+		A2Notification					"A2Snackbar"					//bg for steam popup notifications
+		A2Bar										"Air75"								//bg for greater section emphasis (ie. voice chat and trade notifications)
+		A2Menu									"A2Bar"								//menu bg
+		A2MenuDivider						"Air95"								//menu dividers
+
+		A2ButtonHover						"155 155 155 50"			//button bg on hover
+		A2ButtonActive					"155 155 155 100"			//button bg on click
+		A2DetailsButton					"0 0 0 100"						//details install/play button
+		A2DetailsButtonHover		"0 0 0 200"						//details install/play button hover
+
+		A2Scroll								"Air80"								//scrollbar handle
+		A2ScrollHover						"Air95"								//scrollbar handle on hover
+		A2ScrollGutter					"A2Ribbon"						//scrollbar gutter/backdrop
+
+		A2TextPrimary						"Air215"							//white 87%, text
+		A2TextSecondary					"Air155"							//white 54%, caption
+		A2TextLabel							"Air125"							//white 39%, label
+		A2TextHint							"Air105"							//white 26%, hint text, disabled items
+		A2TextBlack							"Black"								//black text
+		A2TextBlackHover				"0 0 0 220"						//hover
+		A2TextWhite							"White"								//white text
+		A2TextWhiteHover				"255 255 255 220"			//hover
+
+		A2TextOnFocus						"255 255 255 210"			//text color on focus color (header)
+		A2TextOnFocusHover			"Air255"							//hover
+		A2TextNotification			"Air255"							//text color of a notification
+		A2TextNotificationSoft	"255 255 255 210"			//softer text color on notification (also used for hover)
+		A2TextSelected					"Air255"							//selected text color (usually on focus2)
+
+		A2TextOverlay						"Air255"							//overlay text color
+		A2TextOverlaySoft				"Air210"							//softer overlay text color (also used for hover)
+		A2TextOverlayLabel			"Air155"							//overlay label text color
+		A2TextOverlayLabelHover	"Air200"							//hover
+
+		A2FriendsOnline					"103 161 184 255"			//friend online text
+		A2FriendsInGame					"117 165 112 255"			//friend in-game text
+		A2FriendsOffline				"A2TextLabel"					//friend offline text
+
+		A2ChatFriend						"A2TextPrimary"				//chat window friend text
+		A2ChatSelf							"A2TextSecondary"			//chat window self text
+		A2ChatHistory						"A2TextLabel"					//chat window history text
+	}
+}

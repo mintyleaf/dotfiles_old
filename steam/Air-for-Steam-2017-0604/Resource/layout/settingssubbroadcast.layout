@@ -1,0 +1,41 @@
+"resource/layout/settingssubbroadcast.layout"
+{
+	styles {
+		rightcolumnlink {
+			textcolor=A2TextFocus
+		}
+
+		rightcolumnlink:hover {
+			//textcolor=A2TextPrimary
+		}
+	}
+
+	layout {
+		place { control=BroadcastDisabledLabel,BroadcastDisabledSupportURL 		width=max dir=right spacing=4 }
+
+		place { control=BroadcastStatusHeader 																start=BroadcastDisabledLabel dir=down }
+		place { control=BroadcastStatus 																			start=BroadcastStatusHeader dir=right x=4 }
+
+		place { control=PermissionsHeader 																		start=BroadcastStatusHeader dir=down y=20 width=max }
+		place { control=Permissions 																					start=PermissionsHeader dir=down y=5 width=max }
+
+		place { control=DimensionsHeader 																			start=Permissions dir=down y=20 width=max }
+		place { control=Dimensions 																						start=DimensionsHeader dir=down y=5 width=max }
+
+		place { control=BitrateLimitHeader 																		start=Dimensions dir=down y=20 width=max }
+		place { control=BitrateLimit 																					start=BitrateLimitHeader dir=down y=5 width=max }
+
+		place { control=EncoderHeader 																				start=BitrateLimit dir=down y=20 width=max }
+		place { control=EncoderSetting 																				start=EncoderHeader dir=down y=5 width=max }
+
+		place { control=ShowChatHeader 																				start=EncoderSetting dir=down y=20 width=max }
+		place { control=ShowChatCombo 																				start=ShowChatHeader dir=down y=5 width=max }
+
+		place {
+			control=IncludeDesktop,RecordSystemAudio,RecordMic,EnableHardwareSupport,ShowDebugInfo,ShowReminder
+			start=ShowChatCombo dir=down y=20
+		}
+
+		place { control=BroadcastHelpHeader,BroadcastHelpURL,Divider1,ConfigMic height=0 width=0 }
+	}
+}

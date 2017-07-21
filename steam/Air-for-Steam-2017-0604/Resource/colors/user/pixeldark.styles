@@ -1,0 +1,35 @@
+resource/colors/user/pixeldark.styles {
+
+  colors {
+    Focus="66 133 244 255"
+      //
+
+    Focus2="94 151 246 255"
+      //lighter hue (+28 +37 +36)
+
+    Focus3="51 103 214 255"
+      //darker hue (-5% brightness)
+
+    Focus4="51 103 214 150"
+      //Focus3 transparent for details box
+
+    A2TextFocus="Focus"
+      //
+
+    A2TextFocusHover="Focus2"
+      //
+
+    //THEME OVERRIDES
+    A2Background "45 45 45 255"
+    A2Ribbon "36 36 36 255"
+    A2Divider "45 45 45 50"
+    A2Snackbar "58 58 58 255"
+    A2Bar "58 58 58 255"
+    A2Menu "58 58 58 255"
+    A2MenuDivider "45 45 45 200"
+
+    A2Scroll "66 133 244 255"
+    A2ScrollHover "94 151 246 255"
+    A2ScrollGutter "0 0 0 0"
+  }
+}

@@ -1,0 +1,37 @@
+"resource/layout/broadcast_livebanner.layout"
+{
+	colors {
+		transparent_bg = "0 0 0 80"
+		debug_green = "0 128 0 255"
+		debug_yellow = "128 128 0 255"
+		debug_red = "128 0 0 255"
+	}
+
+	styles {
+		LiveBannerStyle {
+			render_bg {
+				0="fill( x0, y0, x1, y1, transparent_bg )"
+			}
+		}
+
+		DebugLineStyleGreen {
+			render_bg { 0="fill( x0, y0, x1, y1, debug_green )" }
+		}
+
+		DebugLineStyleYellow {
+			render_bg { 0="fill( x0, y0, x1, y1, debug_yellow )" }
+		}
+
+		DebugLineStyleRed {
+			render_bg { 0="fill( x0, y0, x1, y1, debug_red )" }
+		}
+	}
+
+	layout {
+		place { control="LiveImage,RequestsImage,RequestsText,ViewersImage,ViewersText" align=right spacing=10 margin-right=10 }
+		place { control="DebugText" align=right spacing=4 margin-right=4 y=22 }
+		place { control="DebugLine" x=0 y=22 }
+
+		place { control="MicrophoneImage" height=0 width=0 }
+	}
+}

@@ -1,0 +1,17 @@
+"resource/layout/pagedragframe.layout"
+{
+	styles {
+		PageDragFrame {
+			bgcolor=A2Background
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 40, Focus )"
+			}
+		}
+
+		PageDragPanel { }
+	}
+
+	layout {
+		place { control="DragPropertySheet" x=0 y=12 width=max height=max }
+	}
+}

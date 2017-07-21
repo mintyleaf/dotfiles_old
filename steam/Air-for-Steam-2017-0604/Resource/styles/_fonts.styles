@@ -1,0 +1,702 @@
+fonts.styles {
+
+  colors [$WINDOWS||$LINUX] {
+    basefont		"Roboto"
+    condensed		"Roboto Condensed"
+    medium			"Roboto Medium"
+  }
+
+  colors [$OSX] {
+    basefont		"Roboto"
+    condensed		"Roboto Condensed"
+    medium			"Roboto Medium"
+
+    //change values to "Roboto Regular" and "Roboto Condensed Regular" if fonts are not loading
+  }
+
+  styles {
+    //Title
+    //font-family=condensed
+    //font-size=22
+    //font-weight=400
+    //textcolor=A2TextOnFocus
+    //font-style=regular
+
+    //Body
+    //font-family=basefont
+    //font-size=16
+    //font-weight=400
+    //textcolor=A2TextPrimary
+    //font-style=regular
+
+    //Caption
+    //font-family=basefont
+    //font-size=16
+    //font-weight=400
+    //textcolor=A2TextSecondary
+    //font-style=regular
+
+    //Subhead 1
+    //font-family=medium
+    //font-size=16
+    //font-weight=500
+    //textcolor=A2TextPrimary
+    //font-style=regular (or UPPERCASE)
+
+    //Subhead 2
+    //font-family=medium
+    //font-size=18
+    //font-weight=500
+    //textcolor=A2TextSecondary
+    //font-style=regular
+
+    //Headline
+    //font-family=condensed
+    //font-size=40
+    //font-weight=700
+    //textcolor=A2TextSecondary
+    //font-style=UPPERCASE
+
+    //Display
+    //font-family=condensed
+    //font-size=50 (or 60)
+    //font-weight=700
+    //textcolor=A2TextSecondary
+    //font-style=regular (or UPPERCASE)
+
+    //Notification
+    //font-family=medium
+    //font-size=16
+    //font-weight=500
+    //textcolor=A2TextNotification
+    //font-style=regular
+
+    //Button
+    //font-family=basefont
+    //font-size=16
+    //font-weight=700
+    //textcolor=Focus
+    //font-style=UPPERCASE
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+  Panel {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextPrimary
+  }
+
+  nameInstanceStyle
+    { textcolor=A2FriendsOffline }
+    //friend alias color
+
+  inviteLinkStyle
+    { textcolor=A2TextFocus }
+    //friend invitation accept/block/ignore links
+
+//namestyle { }
+//statusStyle { }
+//controlPanelLinkStyle { }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Labels
+
+  Label {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextPrimary
+  }
+
+  "ToolWindow Label"
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular }
+    //"Last message received..." text
+
+  "CFriendsDialog Label"
+    { textcolor=A2TextLabel }
+    // friends list offline/disconnected msg !!ALSO CONNECTED TO "2 IN GAME, 2 ONLINE" text
+
+  "CFriendsDialog Panel"
+    { textcolor=A2TextSecondary }
+    //friends list section header
+
+  "ToolWindow Panel"
+    { textcolor=A2TextSecondary }
+    //group chat mini-friends list section header
+
+  ListPanelSectionHeader
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextLabel font-style=regular }
+
+  SectionHeaderStyleLabel
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextLabel font-style=regular }
+    //downloads page section header
+
+  URLLabel
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextFocus font-style=regular }
+
+  URLLabelSimple
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextFocus font-style=regular }
+
+  URLBarSecure
+    { textcolor=html.secureurl }
+
+  URLBarBrokenSecure
+    { textcolor=html.insecureurl }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Rich Text
+
+  RichText {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextSelected
+    selectedbgcolor=Focus2
+  }
+
+  "RichText bold"
+    { font-family=medium }
+
+  "RichText emphasis"
+    { font-style=italic }
+
+  "RichText url"
+    { textcolor=A2TextFocus }
+
+  friends_chat_text
+    { textcolor=A2ChatFriend }
+
+  friends_chat_text_self
+    { textcolor=A2ChatSelf }
+
+  friends_chat_history
+    { textcolor=A2ChatHistory }
+
+  friends_chat_bright_event
+    { font-family=medium }
+
+  friends_chat_url
+    { font-style=underline }
+
+  friends_chat_name_ingame
+    { textcolor=A2FriendsInGame }
+
+  friends_chat_name
+    { textcolor=A2FriendsOnline }
+
+//friends_chat_event { }
+//friends_chat_self { }
+//friends_chat_accountid { }
+
+//"ChatListPanel RichText" { } //chat window font size
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Text Entry
+
+  TextEntry {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular
+    selectedtextcolor=A2TextSelected
+    selectedbgcolor=Focus2
+    shadowtextcolor=A2TextPrimary //cursor color
+
+    //READ ME IF YOU ARE CHANGING TEXTENTRY STYLES
+    //To update TextEntry in Settings > In-Game Overlay & Screenshot shortcut keys
+    //match resource/steamscheme.res Font "Default" to the TextEntry style above
+  }
+
+  TextEntry:focus
+    { textcolor=A2TextPrimary }
+
+  TextEntry:disabled
+    { textcolor=A2TextHint }
+
+  TextEntry:empty
+    { textcolor=A2TextHint }
+
+  TextEntryURL {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    selectedtextcolor=A2TextSelected
+    selectedbgcolor=Focus2
+
+    //url strings from htmlpopup
+  }
+
+  "CSettingsSubFriends TextEntry"
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=regular }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//List Panels
+
+  ListPanel {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextPrimary
+  }
+
+  SectionedListPanel {
+    font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular
+    selectedtextcolor=A2TextPrimary
+  }
+
+//GameColumn_BigText { } //game name in list mode
+
+  GameItem_Uninstalled
+    { textcolor=A2TextSecondary selectedtextcolor=A2TextSecondary }
+
+  GameItem_Installed
+    { textcolor=A2TextPrimary selectedtextcolor=A2TextPrimary }
+
+  GameItem_Shortcut
+    { textcolor=A2TextPrimary selectedtextcolor=A2TextPrimary }
+
+  GameItem_Mod
+    { textcolor=A2TextPrimary selectedtextcolor=A2TextPrimary }
+
+  GameItem_Updating
+    { textcolor=A2TextFocus selectedtextcolor=A2TextFocus }
+
+  GameItem_Decrypting
+    { textcolor=A2TextFocus selectedtextcolor=A2TextFocus }
+
+  GameItem_Syncing
+    { textcolor=A2TextFocus selectedtextcolor=A2TextFocus }
+
+  DLC_Uninstalled
+    { textcolor=A2TextSecondary selectedtextcolor=A2TextSecondary } //details dlc panel
+
+  DLC_Installed
+    { textcolor=A2TextPrimary selectedtextcolor=A2TextPrimary } //details dlc panel
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Buttons
+
+  Button
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  Button:disabled
+    { textcolor=A2TextHint }
+
+  "CSettingsSubStreamingAdvancedClient URLLabel"
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    //spoof a button
+
+  "CSettingsSubStreamingAdvancedHost URLLabel"
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    //spoof a button
+
+  "CSubPanelOptionsFamily URLLabel"
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+    //spoof a button
+
+  CUILaunchButton
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+//ToggleButton { }
+
+  PageTab
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOnFocus font-style=uppercase }
+
+  PageTab:hover
+    { textcolor=A2TextOnFocus }
+
+  PageTab:selected
+    { textcolor=A2TextOnFocusHover }
+
+  PageTab:selected:hover
+    { textcolor=A2TextOnFocusHover }
+
+  "CFriendsDialog PageTab:selected"
+    { textcolor=A2TextOnFocusHover }
+    //mimic ListPanelColumnHeader
+
+  "CGamePropertiesDialog PageTab:selected"
+    { textcolor=A2TextOnFocusHover }
+    //mimic ListPanelColumnHeader
+
+  ListPanelColumnHeader
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOnFocus font-style=uppercase }
+
+  ListPanelColumnHeader:hover
+    { textcolor=A2TextOnFocusHover }
+
+  ControlButton
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextNotification font-style=uppercase }
+
+  Chat_MenuButton_withChrome
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextNotification font-style=uppercase }
+
+  "CScreenshotManager Button"
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextNotification font-style=uppercase }
+
+  ComboBox {
+    font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase
+    selectedtextcolor=A2TextFocus //text color on focus, keep same as textcolor
+  }
+
+  CheckButton
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular }
+
+  CheckButton:disabled
+    { textcolor=A2TextHint }
+
+  RadioButton
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Notifications
+
+  //"TooltipWindow Label"
+    //defined in steam.styles due to text appearing unstyled
+
+  //tooltip_headline
+    //defined in steam.styles due to text appearing unstyled
+
+  friends_offline
+    { textcolor=A2FriendsOffline }
+
+  friends_online
+    { textcolor=A2FriendsOnline }
+
+  friends_ingame
+    { textcolor=A2FriendsInGame }
+
+  friends_ignored
+    { textcolor=A2FriendsOffline }
+
+  friends_chat_securitylink
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextFocus font-style=regular }
+
+  "CSteamRootDialog soft"
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotificationSoft font-style=regular }
+    //email reminder bar
+
+  "CSteamRootDialog bright"
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+    //email reminder bar
+
+  "CSteamRootDialog ButtonStyle"
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+
+  "CSteamRootDialog ButtonStyle:hover"
+    { textcolor=A2TextNotificationSoft }
+
+  support_alert
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+
+  FindEntry {
+    font-family=regular font-size=16 font-weight=400 textcolor=A2TextNotification font-style=regular
+    shadowtextcolor=A2TextNotification
+  }
+
+  "HTML Label" {
+    font-family=regular font-size=16 font-weight=400 textcolor=A2TextNotification font-style=regular
+    //htmlfindbar results found count
+  }
+
+  IMEEntry {
+    font-family=regular font-size=18 font-weight=400 textcolor=A2TextNotification font-style=regular
+    shadowtextcolor=A2TextNotification
+    //vary font size for legibility in CJK languages
+  }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Details
+
+  headertextlarge
+    { font-family=condensed font-size=50 font-weight=700 textcolor=A2TextWhite font-style=uppercase }
+
+  "CGamesPage_Details headertext"
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+
+  "CGamesPage_Details headertext-red"
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+
+  "CGamesPage_Details headertext-green"
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+
+  "CGamesPage_Details headertext-blue"
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextWhite font-style=regular }
+
+  valuetext
+    { font-family=basefont font-size=16 font-weight=500 textcolor=A2TextWhite font-style=regular }
+
+  rightcolumnlink
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+
+  rightcolumnlink:hover
+    { textcolor=A2TextOnFocusHover }
+
+  rightcolumntag
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+
+  gamedetails-headerlabel
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  gamedetails-headerlabel-red
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  gamedetails-headerlabel-green
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  gamedetails-headerlabel-blue
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  workshop_description
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
+
+  communityfile_name
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular }
+
+  mostrecent_label
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
+
+  mostrecent_unlockedsofar
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular }
+
+  everythinglabel
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
+
+  infolabel
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
+
+  title_label
+    { font-family=medium font-size=18 font-weight=500 textcolor=A2TextPrimary font-style=regular }
+
+  date_and_author
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Music
+
+  ArtistStyle
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  PlaylistTitleStyle
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  PositionLabelStyle
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular } //tracklist num
+
+  TrackLabelStyle
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular } //tracklist name
+
+  TracksInfoStyle
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=uppercase }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Downloads
+
+  bigtextlabel
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextOnFocusHover font-style=uppercase }
+
+  bigtextNonUpper
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextOnFocus font-style=uppercase }
+
+  throttleLabel
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextOnFocusHover font-style=uppercase }
+
+  throttleValue
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextOnFocus font-style=uppercase }
+
+  "CSteamRootDialog ModuleHeading"
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  "CSteamRootDialog ModuleHeading2"
+    { font-family=condensed font-size=40 font-weight=700 textcolor=A2TextLabel font-style=uppercase }
+
+  "CSteamRootDialog SectionedListPanel label"
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextPrimary font-style=regular }
+
+  "CSteamRootDialog SectionedListPanel label2"
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextSecondary font-style=regular }
+
+  settingslink
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase }
+
+  PauseButton
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOnFocus font-style=uppercase }
+
+  ResumeButton
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOnFocus font-style=uppercase }
+
+  links
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextFocus font-style=uppercase } //view news button
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Screenshots
+
+  gameselector {
+    font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    selectedtextcolor=A2TextOnFocus //text color on focus, keep same as textcolor
+  }
+
+  CScreenshotCaptionEntry:empty
+    { textcolor=A2TextSecondary }
+
+  publishcharsleft
+    { font-family=basefont font-size=16 font-weight=400 textcolor=A2TextLabel font-style=regular }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Main Client
+
+  CUINavButton
+    { font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+
+  CUINavButton:selected
+    { textcolor=A2TextOnFocusHover }
+
+  NavLabel2
+    { font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOnFocus font-style=uppercase }
+    //small mode games filter
+
+  NavLabel2:hover
+    { textcolor=A2TextOnFocusHover }
+
+  NavLabel2:selected
+    { textcolor=A2TextOnFocusHover }
+
+  LibrarySearch {
+    font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    shadowtextcolor=A2TextOnFocus //cursor color
+    selectedbgcolor=Focus2
+  }
+
+  FriendsSearch {
+    font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular
+    shadowtextcolor=A2TextOnFocus //cursor color
+    selectedbgcolor=Focus2
+  }
+
+  "CMusicPlayerPanel StatusStyle"
+    { font-family=condensed font-size=22 font-weight=400 textcolor=A2TextOnFocus font-style=regular }
+    //track name in mini-player, mimic CUINavButton
+
+  AccountBalanceStyle
+    { font-family=condensed font-size=18 font-weight=700 textcolor=A2TextOnFocusHover font-style=regular }
+
+  online_friends
+    { font-family=condensed font-size=18 font-weight=700 textcolor=A2TextOnFocusHover font-style=regular }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Menus
+
+  MenuItem
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+
+  MenuItem:disabled
+    { textcolor=A2TextHint }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Overlay
+
+  topbar {
+    font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOverlayLabel font-style=uppercase
+    //clock
+  }
+
+  clocksuffix {
+    font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOverlayLabel font-style=uppercase
+    //clock am/pm
+  }
+
+  timeStrings {
+    font-family=basefont font-size=16 font-weight=700 textcolor=A2TextOverlayLabel font-style=uppercase
+    //played time stats
+  }
+
+  taskbar {
+    font-family=medium font-size=16 font-weight=700 textcolor=A2TextOverlay font-style=uppercase
+    //taskbar, web browser, music, settings
+  }
+
+  taskbar:hover
+    { textcolor=A2TextOverlaySoft }
+
+  sidemenu {
+    font-family=medium font-size=16 font-weight=700 textcolor=A2TextOverlayLabel font-style=uppercase
+    //extra links
+  }
+
+  sidemenu:hover
+    { textcolor=A2TextOverlayLabelHover }
+
+  ViewersTextStyle
+    { font-family=medium font-size=18 font-weight=500 textcolor="144 153 161 255" font-style=regular }
+    //broadcast viewer text
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+//Misc
+
+  GamesGridPlaceholder
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextPrimary font-style=uppercase }
+
+  EmoticonMenuItemStyle
+    { font-size=20 textcolor=A2TextNotification }
+
+  SettingsList {
+    font-family=medium font-size=18 font-weight=500 textcolor=A2TextNotification font-style=regular
+    selectedtextcolor=A2TextFocus
+    selectedbgcolor=none
+  }
+
+  "CDialogGameInfo TextEntry"
+    { textcolor=A2TextPrimary }
+    //spoof label text
+
+  "CDialogGameInfo LabelDull"
+    { textcolor=A2TextSecondary }
+
+  "CServerBrowserDialog status"
+    { textcolor=A2TextLabel }
+
+  "CSettingsSubStreaming ListPanelSectionHeader"
+    { font-family=medium font-size=16 font-weight=500 textcolor=A2TextLabel font-style=regular }
+
+  CloudUsageLabelStyle
+    { textcolor=A2TextLabel }
+    //game properties > updates
+
+  "CDialogParentalUnlock Password"
+    { font-size=40 }
+
+  "CTwoFactorCodeChallenge AuthCode"
+    { font-size=40 }
+
+  "CSettingsSubStreamingPIN Password"
+    { font-size=40 }
+
+  loginerror_style_body
+    { textcolor=A2TextPrimary selectedtextcolor=A2TextPrimary }
+    //necessary for login dialog to overwrite generic Label style set to none
+
+  emptylisttext
+    { textcolor=none selectedtextcolor=none }
+    //search results empty
+
+  TreeNodeText
+    { font-family=basefont font-size=16 textcolor=A2TextPrimary selectedtextcolor=A2TextWhite selectedbgcolor=Focus2 }
+  }
+}

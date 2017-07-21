@@ -1,0 +1,17 @@
+resource/layout/playersdialog.layout {
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize,frame_maximize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=body height=max width=max y=49 }
+			place { control=Sheet region=body width=max height=max }
+
+		region { name=buttons align=bottom height=50 }
+			place { control=OKButton region=buttons align=right y=10 spacing=10 margin-right=26 }
+
+		place [!$OSX] { control=frame_minimize height=0 width=0 margin-left=-9999 }
+	}
+}

@@ -1,0 +1,51 @@
+Light
+
+The standard opacity for an active icon on a light background is 54% (#000000).
+An inactive icon, which is lower in the visual hierarchy, should have an opacity of 26% (#000000).
+
+OnFocus icons,
+	#FFFFFF, Alpha 100%
+	#FFFFFF, Alpha 80% hover
+
+Active icons
+	#000000, Alpha 54%
+	#000000, Alpha 64% hover
+
+Secondary icons
+	#000000, Alpha 36%
+	#000000, Alpha 46% hover
+	(icon_clear_field)
+
+Inactive icons
+	#000000, Alpha 26%
+	#000000, Alpha 36% hover
+	(officer star, minithrobber)
+	(cloud icons: to match the inactive color, apply a 45% black on top of the alpha channel afterwards)
+
+Ribbon
+	(gridview_placeholder, listview_placeholder, mic_meter_live)
+
+Dark
+
+The standard opacity for an active icon on a dark background is 100% (#FFFFFF).
+An inactive icon, which is lower in the visual hierarchy, should have an opacity of 30% (#FFFFFF).
+
+OnFocus icons,
+	#FFFFFF, Alpha 100%
+	#FFFFFF, Alpha 80% hover
+
+Active icons
+	#FFFFFF, Alpha 70%
+	#FFFFFF, Alpha 60% hover
+
+Secondary icons
+	#FFFFFF, Alpha 50%
+	#FFFFFF, Alpha 40% hover
+
+Inactive icons
+	#FFFFFF, Alpha 30%
+	#FFFFFF, Alpha 40% hover
+	(lock, unlock, bigpic, mobile, web)
+
+Ribbon
+	(gridview_placeholder, listview_placeholder, mic_meter_live)

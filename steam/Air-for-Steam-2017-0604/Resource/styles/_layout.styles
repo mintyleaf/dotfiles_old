@@ -1,0 +1,352 @@
+layout.styles {
+
+  styles {
+    CSteamRootDialog {
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+      }
+    }
+
+    WebPanelStyle {
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+    BroadcastPanelMinimized {
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CGamesPage_List {
+      render_bg {
+        0="fill( x0, y0 - 9, x1, y0 + 21, Focus3 )"
+      }
+      render {
+        0="image_scale( x0, y0 + 21, x1, y0 + 27, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CGamesPage_Details {
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CGamesPage_Grid {
+      render_bg {
+        0="fill( x0, y0 - 30, x1, y0, Focus3 )"
+      }
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CMusicPage_Details {
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CDownloadsPage {
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 130, Focus3 )"
+      }
+      render {
+        0="image_scale( x0, y0 + 130, x1, y0 + 136, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CGamesPage_Mini {
+      minimum-width=310
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+      }
+      render {
+        0="image_scale( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow_horiz )"
+      }
+    }
+
+    FriendsPanel {
+      minimum-width=230
+      minimum-height=250
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+      }
+      render {
+        0="image_scale( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow_horiz )"
+      }
+    }
+
+    ToolWindow {
+      minimum-width=380
+      minimum-height=374 //necessary because toolwindow has such a large y inset
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y1 - 90, x1, y1 - 60, A2Ribbon )"
+      }
+    }
+
+    COverlayBroadcastChatDialog {
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        2="fill( x0, y1 - 90, x1, y1 - 60, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
+      }
+    }
+
+    HTMLPopup {
+      bgcolor=A2Background
+      render_bg {
+        1="fill( x0, y0, x1, y0 + 50, Focus )"
+      }
+      render {
+        0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
+      }
+    }
+
+    COverlayWebBrowser {
+      bgcolor=A2Background
+      render_bg {
+        1="fill( x0, y0, x1, y0 + 6, Focus3 )"
+        2="fill( x0, y0 + 6, x1, y0 + 56, A2Bar )"
+      }
+      render {
+        0="image_scale( x0, y0 + 56, x1, y0 + 62, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CMusicPlayerPanel {
+      minimum-width=440
+      minimum-height=132
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 132, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CMusicLibraryPanel {
+      minimum-width=800
+      minimum-height=400
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+      }
+      render {
+        0="image_scale( x0, y0 + 50, x1, y0 + 56, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CScreenshotManager {
+      minimum-width=735
+      minimum-height=464
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x1 - 366, y0, x1, y1, A2Ribbon )"
+        1="fill( x0, y0, x1, y0 + 50, Focus )"
+        2="fill( x0, y0 + 50, x1, y0 + 100, A2Bar )"
+      }
+      render {
+        0="image_scale( x0, y0 + 100, x1, y0 + 106, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CDialogSettings {
+      minimum-width=704
+      minimum-height=704
+      bgcolor=A2Background
+      render_bg {
+        0="fill( x0, y0, x0 + 182, y1, A2Bar )"
+        1="fill( x0 + 182, y1 - 50, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0 + 182, y0, x0 + 188, y1, graphics/material/shadow_vert )"
+      }
+    }
+
+    CGamePropertiesDialog {
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CAddShortcutDialog {
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow_horiz )"
+      }
+    }
+
+    COverlaySettingsDialog {
+      minimum-height=750
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 80, x1, y0 + 86, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CServerBrowserDialog {
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y0 + 80, x1, y0 + 110, A2Bar )"
+        3="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
+        4="fill( x1 - 250, y0 + 110, x1, y1 - 50, A2Ribbon )"
+        //right-side filter ribbon overridden in InternetGamesPage.res
+      }
+      render {
+        0="image_scale( x0, y0 + 110, x1, y0 + 116, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CPlayersDialog {
+      minimum-width=650
+      render_bg {
+        0="fill( x0, y0, x1, y0 + 50, Focus )"
+        1="fill( x0, y0 + 50, x1, y0 + 80, Focus3 )"
+        2="fill( x0, y0 + 80, x1, y0 + 110, A2Bar )"
+        3="fill( x0, y1 - 50, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0 + 110, x1, y0 + 116, graphics/material/shadow_horiz )"
+      }
+    }
+
+    CConsolePage {
+      render_bg {
+        2="fill( x0, y1 - 30, x1, y1, A2Ribbon )"
+      }
+      render {
+        0="image_scale( x0, y0, x1, y0 + 6, graphics/material/shadow_horiz )"
+      }
+    }
+
+  //-------------------------------------------------------------------------------------------------------------------------------//
+  //-------------------------------------------------------------------------------------------------------------------------------//
+
+    CSetJumplistOptions
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CProductMarketingDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CChooseBetaDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CChangeContactEmailWizard
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CChangePasswordWizard
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSettingsSubStreamingAdvancedClient
+      { minimum-width=400 minimum-height=444 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSettingsSubStreamingAdvancedHost
+      { minimum-width=400 minimum-height=484 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSettingsSubStreamingPIN
+      { minimum-width=400 minimum-height=282 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CFriendNotificationOptionsDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CBackupWizard
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CEditFriendsGroupsDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CEditTagsDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSetCustomImageDialog
+      { minimum-width=400 minimum-height=249 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    DeleteCustomImageDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSetNicknameDialog
+      { minimum-width=400 minimum-height=213 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    SimpleDialog
+      { minimum-width=400 minimum-height=280 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+      //BlockCommunicationDialog
+
+    CContentManagmentDialog
+      { minimum-width=400 minimum-height=286 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CScreenshotDeleteDialog
+      { minimum-width=400 minimum-height=198 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CScreenshotUploadDialog
+      { minimum-width=400 minimum-height=339 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CFriendAliasesDialog
+      { minimum-width=400 minimum-height=358 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CDialogGameInfo
+      { minimum-width=400 minimum-height=522 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CGameLaunchParametersDialog
+      { minimum-width=400 minimum-height=197 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CLaunchOptionsDialog
+      { minimum-width=400 minimum-height=178 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CShowEULADialog
+      { minimum-width=400 minimum-height=620 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CSSADialog
+      { minimum-width=400 minimum-height=620 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CTwoFactorCodeChallenge
+      { minimum-width=400 minimum-height=270 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CJoinGameDialog
+      { minimum-width=400 minimum-height=270 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    CLimitedUserDialog
+      { minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+
+    "CDialogGameInfo Frame"
+      { minimum-width=400 minimum-height=197 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+      //this is for DialogServerPassword
+
+    CRegisterCDKeyWizard
+      { render_bg { 0="fill( x0, y1 - 42, x1, y1, A2Ribbon )" } }
+      //unable to edit styles
+
+    CInstallAppWizard
+      { render_bg { 0="fill( x0, y1 - 42, x1, y1, A2Ribbon )" } }
+      //unable to edit styles
+  }
+}

@@ -1,0 +1,22 @@
+resource/colors/silver.styles {
+
+	colors {
+		Focus="180 180 180 255"
+			//material 500
+
+		Focus2="208 217 216 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="168 168 168 255"
+			//darker hue (-5% brightness)
+
+		Focus4="168 168 168 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="0 188 212 255"
+			//sky focus
+
+		A2TextFocusHover="77 208 225 255"
+			//sky focus2
+	}
+}

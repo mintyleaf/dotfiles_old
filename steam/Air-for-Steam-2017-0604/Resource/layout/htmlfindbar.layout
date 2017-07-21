@@ -1,0 +1,55 @@
+resource/layout/htmlfindbar.layout {
+
+	styles {
+		CHTMLFindBar {
+			minimum-height=50
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Bar )"
+			}
+		}
+
+		FindEntry {
+			inset-top=-1
+			render_bg { }
+		}
+
+		"HTML Label" {
+			inset-top=-1
+		}
+
+		CloseButtonSm {
+			image=graphics/none
+			render_bg { 0="image( x0 + 6, y0 + 8, x1, y1, graphics/onfocus/web/stop )" }
+		}
+
+		CloseButtonSm:hover {
+			render_bg { 0="image( x0 + 6, y0 + 8, x1, y1, graphics/onfocus/web/stop_hover )" }
+		}
+
+		NextButtonSm {
+			textcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonHover )"
+				1="image( x0 + 4, y0 + 8, x1, y1, graphics/onfocus/caret_down_onfocus )"
+			}
+		}
+
+		PrevButtonSm {
+			textcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonHover )"
+				1="image( x0 + 4, y0 + 8, x1, y1, graphics/onfocus/caret_up_onfocus )"
+			}
+		}
+	}
+
+	layout {
+		region { name=box width=max height=max margin-left=20 margin-right=14 }
+			place { control=FindEntry region=box height=max width=max margin-right=54 end-right=Next }
+			place { control=FindCount region=box height=max align=right margin-right=20 end-right=Next }
+			place { control=Next,Previous region=box align=right height=30 width=20 spacing=10 y=10 margin-right=39 }
+			place { control=Close region=box align=right width=25 height=25 y=10 }
+
+		place { control=SearchThisPage height=0 width=0 }
+	}
+}

@@ -1,0 +1,31 @@
+resource/layout/downloadspage.layout {
+
+	styles {
+		//listpanel column headers
+		label {
+			padding-left=4
+			inset-top=-1
+		}
+
+		SectionHeaderStyle { }
+
+		SectionedListPanelCollapser {
+			minimum-width=30
+			padding-left=0
+			render_bg {
+				0="image( x0 + 7, y0 + 2, x1, y1, graphics/inactive/expand_less )"
+			}
+		}
+
+		SectionedListPanelCollapser:selected {
+			padding-left=0
+			render_bg {
+				0="image( x0 + 7, y0 + 2, x1, y1, graphics/inactive/expand_more )"
+			}
+		}
+	}
+
+	layout {
+		place { control=downloadsummarypanel,panel_list dir=down width=max height=max }
+	}
+}

@@ -1,0 +1,60 @@
+switches.styles {
+
+	styles {
+		CheckButton
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/chkUnselStd )" } }
+
+		CheckButton:selected
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/chkSelStd )" } }
+
+		CheckButton:disabled
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/chkUnselDis )" } }
+
+		CheckButton:selected:disabled
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/chkSelDis )" } }
+
+		"CheckButtonList CheckButton"
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 2, x1, y1, graphics/active/switches/chkUnselStd )" } }
+
+		"CheckButtonList CheckButton:selected"
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 2, x1, y1, graphics/active/switches/chkSelStd )" } }
+
+		"CheckButtonList CheckButton:disabled"
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 2, x1, y1, graphics/active/switches/chkUnselDis )" } }
+
+		"CheckButtonList CheckButton:selected:disabled"
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 2, x1, y1, graphics/active/switches/chkSelDis )" } }
+
+		ListPanelCheckBox
+			{ render_bg { 0="image( x0 + 6, y0 + 1, x1, y1, graphics/active/switches/chkUnselStd )" } }
+
+		ListPanelCheckBox:selected
+			{ render_bg { 0="image( x0 + 6, y0 + 1, x1, y1, graphics/active/switches/chkSelStd )" } }
+
+		ListPanelCheckBox:disabled
+			{ render_bg { 0="image( x0 + 6, y0 + 1, x1, y1, graphics/active/switches/chkUnselDis )" } }
+
+		ListPanelCheckBox:selected:disabled
+			{ render_bg { 0="image( x0 + 6, y0 + 1, x1, y1, graphics/active/switches/chkSelDis )" } }
+
+		"ListPanelColumnheader ListPanelCheckBox"
+			{ render_bg { 0="image( x0 + 7, y0 + 7, x1, y1, graphics/active/switches/chkUnselStd )" } }
+
+		"ListPanelColumnheader ListPanelCheckBox:selected"
+			{ render_bg { 0="image( x0 + 7, y0 + 7, x1, y1, graphics/active/switches/chkSelStd )" } }
+
+		"ListPanelColumnheader ListPanelCheckBox:disabled"
+			{ render_bg { 0="image( x0 + 7, y0 + 7, x1, y1, graphics/active/switches/chkUnselDis )" } }
+
+		"ListPanelColumnheader ListPanelCheckBox:selected:disabled"
+			{ render_bg { 0="image( x0 + 7, y0 + 7, x1, y1, graphics/active/switches/chkSelDis )" } }
+
+		RadioButton
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/radUnselStd )" } }
+
+		RadioButton:selected
+			{ padding-left=17 render_bg { 0="image( x0, y0 + 3, x1, y1, graphics/active/switches/radSelStd )" } }
+
+		RadioButtonList { }
+	}
+}

@@ -1,0 +1,20 @@
+resource/layout/overlay_broadcastpanel.layout {
+
+	styles {
+		button {
+			minimum-height=0 //reset for button height
+			padding-right=0 padding-left=0
+			render_bg { }
+		}
+
+		button:hover {
+			textcolor=A2TextFocusHover
+		}
+	}
+
+	layout {
+		place { control=ShowBroadcast,ShowChat,ShowSettings,StopBroadcast spacing=20 align=top-center }
+
+		place { control=TitleText,InstructionText height=0 width=0 }
+	}
+}

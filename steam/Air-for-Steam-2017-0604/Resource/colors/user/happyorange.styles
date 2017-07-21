@@ -1,0 +1,22 @@
+resource/colors/sky.styles {
+
+	colors {
+		Focus="239 121 3 255"
+			//
+
+		Focus2="255 158 39 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="227 115 2 255"
+			//darker hue (-5% brightness)
+
+		Focus4="227 115 2 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

@@ -1,0 +1,16 @@
+# Set the default behavior
+* text=auto
+
+# Declare files that will always have CRLF line endings
+*.styles text eol=crlf
+*.layout text eol=crlf
+*.menu text eol=crlf
+*.res text eol=crlf
+*.css text eol=crlf
+*.txt text eol=crlf
+*.ini text eol=crlf
+
+# Denote all files that are truly binary and should not be modified
+*.ttf binary
+*.tga binary
+*.png binary

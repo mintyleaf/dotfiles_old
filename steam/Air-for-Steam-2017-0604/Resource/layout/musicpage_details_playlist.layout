@@ -1,0 +1,65 @@
+"resource/layout/musicpage_details_playlist.layout"
+{
+	styles {
+
+		CMusicPage_Details_Playlist {
+			bgcolor=none
+		}
+
+		CoverStyle {
+		}
+
+		ActionButtonStyle {
+		}
+
+		AdditionalActionButtonStyle {
+		}
+	}
+
+	layout {
+
+		region { name=details	y=20 width=max height=max margin-left=20 margin-right=20 overflow=scroll-vertical }
+
+		place { control=CoverImage width=160 height=160 }
+
+		place { control=PlaylistTitleLabel region=details }
+
+		place {
+			control=CoverImage
+			start=PlaylistTitleLabel
+			region=details
+			y=16
+			x=0
+			dir=down
+		}
+
+		place {
+			control=TracksInfoLabel
+			start=CoverImage
+			region=details
+			y=0
+			x=0
+			dir=down
+		}
+
+		place {
+			control=PlayPlaylistButton,AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton
+			start=TracksInfoLabel
+			region=details
+			y=9
+			margin-left=-5
+			dir=down
+		}
+
+		place {
+			control=*MusicPageDetailsPlaylistTrack
+			start=AddRandomTracksToPlaylistButton
+			region=details
+			y=20
+			width=max
+			dir=down
+			spacing=0
+			height=32
+		}
+	}
+}

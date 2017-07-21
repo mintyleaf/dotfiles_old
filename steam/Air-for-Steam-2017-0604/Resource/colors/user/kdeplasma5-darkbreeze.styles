@@ -1,0 +1,35 @@
+resource/colors/breezedark.styles {
+
+	colors {
+		Focus="49 54 59 255"
+
+		Focus2="61 174 233 255"
+
+		Focus3="49 54 59 255"
+
+		Focus4="49 54 59 150"
+
+		A2TextFocus="Focus2"
+
+		A2TextFocusHover="Focus2"
+
+		//THEME OVERRIDES
+		A2Background "49 54 59 255"
+		A2Ribbon "35 38 41 255"
+		A2Divider "239 240 241 50"
+		A2Snackbar "35 38 41 255"
+		A2Bar "35 38 41 255"
+		A2Menu "49 54 59 255"
+		A2MenuDivider "111 115 117 255"
+
+		A2ButtonHover "189 195 199 50"
+		A2ButtonActive "189 195 199 100"
+
+		A2Scroll "168 169 171 255"
+		A2ScrollHover "61 174 233 255"
+		A2ScrollGutter "96 99 101 255"
+
+		A2TextPrimary "239 240 241 255"
+		A2TextSecondary "111 115 117 255"
+	}
+}

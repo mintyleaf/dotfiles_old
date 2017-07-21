@@ -1,0 +1,30 @@
+resource/layout/phonereminderbar.layout {
+
+	styles {
+		CPhoneReminderBar {
+			render { }
+			render_bg {
+				0="fill (x0, y0, x1, y1, Focus3 )"
+			}
+		}
+
+		soft {
+			minimum-width=780
+		}
+
+		ButtonStyle {
+			minimum-height=0
+			padding-left=0 padding-right=0
+			render_bg { }
+		}
+	}
+
+	layout {
+		region { name=box width=max height=max margin-left=26 margin-right=26 }
+
+		place { control=phonereminderbar_info region=box y=8 align=top-center }
+		place { control=phonereminderbar_yesbutton,phonereminderbar_nobutton region=box y=23 spacing=3 align=top-center }
+
+		place { control=phonereminderbarlabel height=0 width=0 margin-left=-9999 }
+	}
+}

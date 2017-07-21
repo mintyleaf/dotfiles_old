@@ -1,0 +1,130 @@
+resource/layout/musicplayerpanel.layout {
+
+	styles {
+		ListPanelInterior:scrollbar {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, A2ScrollGutter )"
+			}
+		}
+
+		ClientTitle {
+			textcolor=none
+		}
+
+		ClientTitle:FrameFocus {
+			textcolor=none
+		}
+
+		NoTracksLabelStyle
+			{ bgcolor=none render_bg { } image=graphics/music_background }
+
+		CurrentAlbumImageStyle { }
+
+		SeekBarStyle {
+			bgcolor=none
+		}
+
+		RepeatButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/repeat )" } }
+
+		RepeatButtonStyle:selected
+			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/repeat_enabled )" } }
+
+		RepeatOnceButtonStyle:selected
+			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/repeatone_enabled )" } }
+
+		ShuffleButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/shuffle )" } }
+
+		ShuffleButtonStyle:selected
+			{ render_bg { 0="fill( x0, y0, x1, y1 - 6, focus )" 1="image( x0, y0, x1, y1, graphics/active/music/shuffle_enabled )" } }
+
+		PreviousButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/back )" } }
+
+		NextButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/fwd )" } }
+
+		PlayButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/play )" } }
+
+		PauseButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/pause )" } }
+
+		VolumeButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
+
+		VolumeButtonActiveStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/volume )" } }
+
+		MuteVolumeButtonStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
+
+		MuteVolumeButtonActiveStyle
+			{ render_bg { 0="image( x0, y0, x1, y1, graphics/active/music/mute )" } }
+
+		BrowseButtonStyle
+			{ render_bg { } }
+
+		BrowseButtonStyle:hover
+			{ render_bg { } }
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=nav height=50 width=max y=9 }
+		region { name=body height=max width=max y=50 }
+		region { name=controls region=body height=max width=98 align=top-center }
+
+		place {	control=CurrentAlbumImage region=body y=16 x=26 width=50 height=50 }
+		place {	control=BrowseButton region=body y=16 x=26 width=50 height=50 }
+
+		place [!$OSX] { control=CurrentTrackLabel region=nav x=25 y=5 margin-right=79 }
+		place [$OSX] { control=CurrentTrackLabel region=nav x=25 y=5 margin-left=79 }
+
+		place {
+			control=PreviousButton
+			region=controls
+			y=32
+			height=18
+			width=14
+		}
+		place {
+			control=PlayPauseButton
+			start=PreviousButton
+			region=controls
+			y=-16
+			x=11
+			height=48
+			width=48
+		}
+		place {
+			control=NextButton
+			start=PlayPauseButton
+			region=controls
+			y=16
+			x=9
+			height=18
+			width=14
+		}
+		place {
+			control=RepeatButton,ShuffleButton,VolumeButton
+			region=body
+			align=right
+			y=29
+			spacing=10
+			height=24
+			width=24
+			margin-right=26
+		}
+
+		place { control=SeekBar region=body y=82 height=18 width=max margin-right=10 margin-left=10 }
+		place { control=TrackList region=body y=112 width=max height=max }
+
+		place { control=NoTracksLabel,InfoLabel,CurrentStatusLabel,CurrentArtistLabel height=0 width=0 margin-left=-9999 }
+	}
+}

@@ -1,0 +1,49 @@
+resource/layout/overlay_broadcastpanel.layout {
+
+	styles {
+		COverlayBroadcastChatDialog {
+			//styles defined in _layout.styles
+		}
+
+		Textentryfocus_chat {
+			minimum-height=0
+			inset-left=0
+			render_bg { }
+		}
+
+		Textentryfocus_chat:focus {
+			render_bg {
+				//0="fill( x0 + 3, y1 - 1, x1, y1 + 1, Focus )"
+			}
+		}
+
+		"RichText Scrollbar" {
+			inset-bottom=21
+		}
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region { name=chat y=50 margin-bottom=90 height=max width=max }
+		region { name=bottom align=bottom height=90 width=max }
+
+		place {
+			control=ChatHistory
+			region=chat
+			width=max
+			height=max
+			dir=down
+			margin-bottom=-15
+		}
+
+		place { control=StatusLabel					region=bottom height=30 width=max margin-left=10 margin-right=10 }
+
+		place { control=TextEntry						region=bottom x=7 y=42 height=36 width=max end-right=EmoticonButton margin-right=9 }
+		place { control=EmoticonButton			region=bottom align=right y=36 height=50 margin-right=17 }
+
+		place { control=SendButton height=0 width=0 margin-left=-9999 }
+	}
+}

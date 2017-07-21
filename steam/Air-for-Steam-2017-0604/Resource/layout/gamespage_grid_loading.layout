@@ -1,0 +1,31 @@
+"resource/layout/gamespage_grid_loading.layout"
+{
+	styles
+	{
+		GamesGridPlaceholder { }
+
+		GamesGridIconBorder {
+			bgcolor=none
+			inset="0 0 0 0"
+			render {
+				1="image( x0, y0, x1, y1, steam/cached/icon_game_frame )"
+			}
+		}
+
+		GGPlaceholderBG {
+			bgcolor=none
+		}
+
+		"GameItem_installed GamesGridPlaceholder" { }
+	}
+
+	layout
+	{
+		region { name="icon_region" width=max height=max }
+
+		place { control = "background" width=max height=max }
+		place { control = "appname" margin=12 width=max align=center margin-top=41 }
+
+		place { control="noappimage_border,noappimage" height=0 width=0 }
+	}
+}

@@ -1,0 +1,51 @@
+resource/layout/gamespage_details_friends_list.layout {
+
+	colors {
+		// Note the margin/spacing/width values here must match what is used in placement below
+		// for the image region.  The margin value should be computed by adding the margin of all containing
+		// regions for the images.  All these values also must be positive integers.
+		GameDetailsFriends.ImageAreaMargin "10"
+		GameDetailsFriends.ImageAreaSpacing "10"
+		GameDetailsFriends.ImageWidth "46"
+
+		Tooltip.Anchor=Parent
+	}
+
+	styles {
+		friendlabelmore {
+			textcolor=none
+			inset-left=-99
+			inset-top=-99
+		}
+
+		ImagePanel {
+			minimum-height=38
+			minimum-width=38
+		}
+
+		CFriendAvatarClickPanel {
+			minimum-height=46
+			minimum-width=46
+		}
+	}
+
+	layout {
+		region { name=body width=max height=max }
+		region { name=images region=body x=0 y=30 width=max }
+
+		place {
+			region=images
+			control=*friendimage
+			dir=right
+			width=46
+			height=46
+			spacing=10
+		}
+
+		place { control=friendlabelmore height=0 width=0 }
+
+		// Only one of the next two will be visible at once
+		place { region=body control=infolabelplural y=0 width=max }
+		place { region=body control=infolabelsingular y=0 width=max }
+	}
+}

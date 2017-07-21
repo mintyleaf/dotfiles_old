@@ -1,0 +1,93 @@
+web.styles {
+
+	styles {
+		HTML {
+			bgcolor=A2Snackbar
+			inset="2 2 2 2"
+		}
+
+		WebPanelStyle {
+			inset="0 0 0 0"
+		}
+
+		PopupHTML {
+			inset="0 0 0 0"
+		}
+
+		BroadcastPanelMinimized {
+			inset="0 0 0 0"
+		}
+
+		CSteamAuthedHTML {
+			inset="0 0 0 0"
+			//received gift dialog
+			//update news dialog
+		}
+
+		"CDialogCheckForUpdates HTML" {
+			inset="0 0 0 0"
+		}
+
+		"CShowEULADialog HTML" {
+			inset="0 0 0 0"
+		}
+
+		"CSSADialog HTML" {
+			inset="0 0 0 0"
+		}
+
+		BackButton
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/back }
+
+		BackButton:hover
+			{ render_bg { } image=graphics/onfocus/web/back_hover }
+
+		BackButton:disabled
+			{ render_bg { } image=graphics/none }
+
+		ForwardButton
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/forward }
+
+		ForwardButton:hover
+			{ render_bg { } image=graphics/onfocus/web/forward_hover }
+
+		ForwardButton:disabled
+			{ render_bg { } image=graphics/none }
+
+		ReloadButton
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/refresh }
+
+		ReloadButton:hover
+			{ render_bg { } image=graphics/onfocus/web/refresh_hover }
+
+		ReloadButton:disabled
+			{ render_bg { } image=graphics/none }
+
+		StopButton
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/stop }
+
+		StopButton:hover
+			{ render_bg { } image=graphics/onfocus/web/stop_hover }
+
+		StopButton:disabled
+			{ render_bg { } image=graphics/none }
+
+		BackButtonSm
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/back }
+
+		BackButtonSm:hover
+			{ render_bg { } image=graphics/onfocus/web/back_hover }
+
+		BackButtonSm:disabled
+			{ render_bg { } image=graphics/none }
+
+		ForwardButtonSm
+			{ minimum-height=0 padding-left=0 padding-right=0 render_bg { } image=graphics/onfocus/web/forward }
+
+		ForwardButtonSm:hover
+			{ render_bg { } image=graphics/onfocus/web/forward_hover }
+
+		ForwardButtonSm:disabled
+			{ render_bg { } image=graphics/none }
+	}
+}

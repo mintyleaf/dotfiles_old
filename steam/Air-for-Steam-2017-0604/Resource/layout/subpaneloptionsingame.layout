@@ -1,0 +1,33 @@
+"resource/layout/subpaneloptionsingame.layout"
+{
+	layout {
+		place {
+			control=EnableOverlayCheck,EnableSCTenFootOverlayCheck,EnableVRDesktopGameTheaterCheck
+			dir=down width=max margin-top=-4
+		}
+
+		place { control=PingRateLabel												dir=down width=max start=EnableVRDesktopGameTheaterCheck y=15 }
+		place { control=PingRateCombo												dir=down width=max start=PingRateLabel y=5 }
+
+		place { control=ShowIngameFPSLabel									dir=down start=PingRateCombo y=20 }
+		place { control=ShowIngameFPSCombo									dir=down width=max start=ShowIngameFPSLabel y=5 }
+
+		place { control=ShowIngameFPSContrastCheck					dir=down start=ShowIngameFPSCombo y=20 }
+
+		place { control=HotKeySelectorLabel									dir=down start=ShowIngameFPSContrastCheck y=30 }
+		place { control=HotKeySelector											dir=down width=max start=HotKeySelectorLabel y=5 }
+
+		place { control=ScreenshotLabel											dir=down start=HotKeySelector y=30 }
+		place { control=ScreenshotHotKeySelector						dir=down width=max start=ScreenshotLabel y=5 }
+
+		place { control=ScreenshotActionLabel								dir=down start=ScreenshotHotKeySelector y=30 }
+		place {
+			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			dir=down start=ScreenshotActionLabel y=5
+		}
+
+		place { control=SetScreenshotFolderButton						dir=down start=ScreenshotSaveUncompressedCheck y=10 }
+
+		place { control=Divider1,DescriptionLabel,TitleLabel,PingRateInfo height=0 width=0 }
+	}
+}

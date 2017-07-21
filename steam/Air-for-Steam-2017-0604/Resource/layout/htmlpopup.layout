@@ -1,0 +1,41 @@
+resource/layout/htmlpopup.layout {
+
+	styles {
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place [!$OSX] { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place [$OSX] { control=frame_close,frame_minimize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		region [!$OSX] { name=nav height=50 width=max y=10 x=17 }
+		region [$OSX] { name=nav height=50 width=max y=10 x=77 }
+		region { name=body height=max width=max y=50 }
+
+		place {
+			control=BackButton,ForwardButton
+			region=nav height=30 width=28 spacing=10
+		}
+
+		place {
+			control=ReloadButton,StopButton
+			region=nav x=9 height=30 spacing=10 start=ForwardButton
+		}
+
+		place {
+			control=URLBar
+			region=nav y=4 x=116 height=22 width=max margin-right=128
+		}
+
+		place {
+			control=PageLoadThrobber
+			region=nav align=right height=30 width=30 margin-right=84
+		}
+
+		place { control=htmlpopupchild region=body width=max height=max }
+
+		place { control=EVCert,StatusText,URLStatusImage height=0 width=0 margin-left=-9999 }
+	}
+}
+

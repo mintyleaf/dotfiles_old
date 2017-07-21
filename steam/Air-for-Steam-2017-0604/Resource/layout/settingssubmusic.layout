@@ -1,0 +1,39 @@
+"resource/layout/settingssubmusic.layout"
+{
+	styles {
+		ListPanel {
+			bgcolor=A2Ribbon
+			selectedtextcolor=A2TextFocus
+		}
+	}
+
+	layout {
+		place { control=DatabaseInfoLabel 												dir=down }
+		place { control=LibraryList 															dir=down width=max height=80 start=DatabaseInfoLabel y=10 }
+
+		place { control=AddLibraryButton 													dir=down start=LibraryList y=10 }
+		place { control=RemoveLibraryButton 											dir=right start=AddLibraryButton margin-left=10 }
+		place { control=StartCrawlingButton 											dir=right start=RemoveLibraryButton margin-left=10 }
+		place { control=ResetDatabaseButton 											dir=right start=StartCrawlingButton margin-left=10 }
+
+		place {
+			control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders,EnableMediaKeysCheckbox
+			dir=down start=AddLibraryButton y=20
+		}
+
+		place { control=PauseMusicHeader 													dir=down start=EnableMediaKeysCheckbox y=30 }
+		place {
+			control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox
+			dir=down start=PauseMusicHeader y=5
+		}
+
+		place { control=NotificationHeader 												dir=down x=215 start=EnableMediaKeysCheckbox y=30 }
+		place { control=NotificationPlaylistNowPlayingCheckbox 		dir=down start=NotificationHeader y=5 }
+
+		place { control=LoggingHeader 														dir=down start=PauseMusicWhenVoiceChatCheckbox y=30 }
+		place { control=LoggingCrawlingCheckbox 									dir=down start=LoggingHeader y=5 }
+
+
+		place { control=LibraryDivider,DatabaseDivider,LibraryHeader,DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider height=0 width=0 }
+	}
+}

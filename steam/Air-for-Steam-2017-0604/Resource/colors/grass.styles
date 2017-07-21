@@ -1,0 +1,22 @@
+resource/colors/grass.styles {
+
+	colors {
+		Focus="86 171 76 255"
+			//
+
+		Focus2="114 208 112 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="78 158 70 255"
+			//darker hue (-5% brightness)
+
+		Focus4="78 158 70 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

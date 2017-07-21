@@ -1,0 +1,25 @@
+"resource/layout/broadcastview.layout"
+{
+	styles {
+
+		CloseButtonStyle {
+			minimum-height=30
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/web/stop )"
+			}
+		}
+
+		CloseButtonStyle:hover {
+			render_bg {
+				1="image( x0, y0, x1, y1, graphics/onfocus/web/stop_hover )"
+			}
+		}
+	}
+
+	layout {
+
+		place { control=clickpanel width=max height=max }
+		place [!$OSX] { control=closebutton width=17 height=17 margin-top=10 margin-right=10 align=right }
+		place [$OSX] { control=closebutton width=17 height=17 margin-top=10 margin-left=10 align=left }
+	}
+}

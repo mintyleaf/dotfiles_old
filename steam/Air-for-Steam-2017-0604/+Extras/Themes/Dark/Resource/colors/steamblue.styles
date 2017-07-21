@@ -1,0 +1,22 @@
+resource/colors/steamblue.styles {
+
+	colors {
+		Focus="52 64 91 255"
+			//
+
+		Focus2="80 101 127 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="45 55 79 255"
+			//darker hue (-5% brightness)
+
+		Focus4="45 55 79 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="96 118 168 255"
+			//+30% brightness focus
+
+		A2TextFocusHover="129 162 204 255"
+			//+30% brightness focus2
+	}
+}

@@ -1,0 +1,22 @@
+resource/colors/deeppurple.styles {
+
+	colors {
+		Focus="94 53 177 255"
+			//
+
+		Focus2="126 87 194 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="87 49 163 255"
+			//darker hue (-5% brightness)
+
+		Focus4="87 49 163 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="151 101 252 255"
+			//+30% brightness focus, -%10 saturation
+
+		A2TextFocusHover="182 140 255 255"
+			//+30% brightness focus2, -10% saturation
+	}
+}

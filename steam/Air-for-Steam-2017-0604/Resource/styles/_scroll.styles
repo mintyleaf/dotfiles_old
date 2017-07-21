@@ -1,0 +1,177 @@
+scroll.styles {
+
+	styles {
+		ScrollBar {
+			inset-top=0
+			inset-bottom=6
+			inset-left=0
+			inset-right=0
+		}
+
+		ScrollBar.Horizontal {
+			inset-top=0
+			inset-bottom=0
+			inset-left=0
+			inset-right=0
+		}
+
+		ScrollBarButton.up {
+			padding-left=0 padding-right=0 //reset
+			bgcolor=A2ScrollGutter
+			minimum-height=19
+			image=graphics/inactive/scroll/scroll_up
+			render_bg { }
+		}
+
+		ScrollBarButton.up:hover {
+			bgcolor=A2ScrollGutter
+			image=graphics/inactive/scroll/scroll_up_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.down {
+			padding-left=0 padding-right=0 //reset
+			bgcolor=A2ScrollGutter
+			minimum-height=19
+			inset-top=3
+			image=graphics/inactive/scroll/scroll_down
+			render_bg { }
+		}
+
+		ScrollBarButton.down:hover {
+			bgcolor=A2ScrollGutter
+			image=graphics/inactive/scroll/scroll_down_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.left {
+			padding-left=0 padding-right=0 //reset
+			bgcolor=A2ScrollGutter
+			minimum-width=19
+			image=graphics/inactive/scroll/scroll_left
+			render_bg { }
+		}
+
+		ScrollBarButton.left:hover {
+			bgcolor=A2ScrollGutter
+			image=graphics/inactive/scroll/scroll_left_hover
+			render_bg { }
+		}
+
+		ScrollBarButton.right {
+			padding-left=0 padding-right=0 //reset
+			bgcolor=A2ScrollGutter
+			minimum-width=19
+			image=graphics/inactive/scroll/scroll_right
+			render_bg { }
+		}
+
+		ScrollBarButton.right:hover {
+			bgcolor=A2ScrollGutter
+			image=graphics/inactive/scroll/scroll_right_hover
+			render_bg { }
+		}
+
+		ScrollBarHandle {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, A2Scroll )"
+			}
+		}
+
+		ScrollBarHandle:hover {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, A2ScrollHover )"
+			}
+		}
+
+		ScrollBarHandle:active {
+			render_bg {
+				0="fill( x0 + 2, y0 + 7, x1 - 2, y1, A2ScrollHover )"
+			}
+		}
+
+		SliderHoriz {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, A2Scroll )"
+			}
+		}
+
+		SliderHoriz:hover {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, A2ScrollHover )"
+			}
+		}
+
+		SliderHoriz:active {
+			render_bg {
+				0="fill( x0 + 5, y0 + 2, x1 + 1, y1 - 2, A2ScrollHover )"
+			}
+		}
+
+		ScrollBarSlider {
+			bgcolor=A2ScrollGutter
+			render_bg { }
+		}
+
+		ScrollBarSliderHoriz {
+			bgcolor=A2ScrollGutter
+			render_bg { }
+		}
+
+		"ListPanel scrollbar" {
+			inset-left=-1
+			inset-right=1
+		}
+
+		"CSteamRootDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, A2ScrollGutter )"
+				//1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"CPlayersDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, A2ScrollGutter )"
+				//1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"CAddShortcutDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, A2ScrollGutter )"
+				//1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"CServerBrowserDialog ListPanelInterior:scrollbar" {
+			render_bg {
+				0="fill( x1, y0, x1 + 1, y1, A2ScrollGutter )"
+				//1px missing from scrollbar on right side of list panel
+			}
+		}
+
+		"RichText scrollbar" {
+			inset-top=-2
+			inset-left=-1
+			inset-right=1
+		}
+
+		//RichText scrollbar inset-bottom=-21 in ChatRoomDlgFriend.res and ChatRoomDlg.res
+
+		RichTextInterior:scrollbar {
+			render_bg {
+				0="fill( x1, y0, x1 + 13, y1, A2ScrollGutter )"
+			}
+		}
+
+		"CFriendsDialog Scrollbar" {
+			inset-bottom=6
+			inset-top=-1
+		}
+
+		"CPlayersDialog Scrollbar" {
+			inset-bottom=18
+		}
+	}
+}

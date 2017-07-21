@@ -1,0 +1,71 @@
+gameoverlay.styles {
+
+	include "resource/styles/steam.styles"
+
+	colors {
+		Notifications.PanelPosition "BottomRight"
+
+		A2OverlayBackground			"32 55 82 75"					//overlay bg
+		A2OverlayBar						"27 40 56 255"				//overlay topbar bg (A2Bar in dark theme)
+
+		A2Background						"32 55 82 255"				//client bg
+		A2Ribbon								"27 40 56 255"				//bg for section emphasis (ie. left side of settings dialog)
+		A2Divider								"28 47 69 255"				//client dividers
+		//A2Snackbar						//don't change in overlay due to avatarBorderNotification
+		//A2Notification				//don't change in overlay due to avatarBorderNotification
+		A2Bar										"37 64 94 255"				//bg for greater section emphasis (ie. voice chat and trade notifications)
+		A2Menu									"A2Bar"								//menu bg
+		A2MenuDivider						"32 55 82 255"				//menu dividers
+
+		A2ButtonHover						"155 155 155 50"			//button bg on hover
+		A2ButtonActive					"155 155 155 100"			//button bg on click
+
+		A2Scroll								"28 47 69 255"				//scrollbar handle
+		A2ScrollHover						"60 108 149 100"			//scrollbar handle on hover
+		A2ScrollGutter					"A2Ribbon"						//scrollbar gutter/backdrop
+
+		A2TextPrimary						"255 255 255 220"			//white 87%, text
+		A2TextSecondary					"255 255 255 140"			//white 54%, caption
+		A2TextLabel							"255 255 255 100"			//white 39%, label
+		A2TextHint							"255 255 255 66"			//white 26%, hint text, disabled items
+
+		A2ChatFriend						"A2TextPrimary"				//chat window friend text
+		//!! keep here due to bug
+	}
+
+	styles {
+		"ToolWindow FrameMinimizeButton" {
+			render_bg { }
+			//remove minimize button from chat window
+		}
+
+		friends_chat_text {
+			textcolor=A2ChatFriend
+			//!! needs to be added here to due to bug with color not updating in overlay
+		}
+
+		CAvatarOverlayImage {
+			render {
+				0="image( x0, y0, x1, y1, graphics/avatarBorderOverlay )"
+			}
+			//removes double avatar border
+		}
+
+		//notification overrides
+		//rgb50 = 50 in overlay
+		//rgb51 = 50 in desktop
+		BroadcastApproveNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		BroadcastInviteNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		BroadcastViewerNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CChatInvitationNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CChatMsgNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CClanEventNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CClanInvitationNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CFriendInGameNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CFriendInvitationNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CFriendOnlineNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CGameInvitationNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		TradInvitationNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+		CVoiceChatInviteNotification { render { 0="image( x0 + 11, y0 + 14, x1, y1, graphics/avatarBorderNotificationOverlay )" } }
+	}
+}

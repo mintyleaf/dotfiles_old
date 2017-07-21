@@ -1,0 +1,179 @@
+colors.styles {
+
+	include "config.ini"
+
+	colors {
+		almostBlack														"23 22 20 255"
+		grey																	"158 153 149 255"
+		none																	"0 0 0 0"
+		yellow																"255 255 0 255"
+		offwhite															"166 164 159 255"
+		dullgreen															"216 222 211 255"
+		maize																	"203 191 87 255"
+		red																		"255 51 51 255"
+		darkblue															"0 85 128 255"
+		blue																	"0 133 199 255"
+		darkred																"128 0 0 255"
+		darkpurple														"64 0 64 255"
+
+		bordercolor														"133 130 113 255"
+		darkcorner														"77 73 71 255"
+		buttontext														"Text"
+		buttontextactive											"Text"
+
+		ButtonFace														"105 102 99 200"
+		ButtonFace2														"92 89 86 255"
+		ButtonFace3														"95 92 90 255"
+		ButtonFaceDisabled										"none"
+		ButtonFaceHover												"105 102 99  240"
+		ButtonFaceActive											"105 102 99  240"
+		ButtonFaceFocus												"105 102 99  240"
+		ButtonFaceActiveFocus									"105 102 99  255"
+
+		ButtonBorder													"112 109 105 255"
+		ButtonBorderPage											"128 124 120 255"
+		ButtonBorderDisabled									"77 75 72 255"
+		ButtonBorderDisabled2									"67 65 63 255"
+		ButtonBorderActive										"140 135 129 255"
+		ButtonBorderFocus											"153 147 141 255"
+
+		Text																	"A2TextPrimary"
+		Text2																	"A2TextPrimary"
+		TextHover															"A2TextPrimary"
+		TextSelected													"A2TextPrimary"
+		TextentrySelected											"A2TextWhite"
+		TextDisabled													"A2TextHint"
+		TextSelectedBG												"Focus2"
+
+		Label																	"A2TextLabel"
+		Label2																"A2TextLabel"
+		LabelDisabled													"A2TextHint"
+		LabelFocus														"A2TextLabel"
+		NavLabel															"158 153 149 255"
+
+		TextGlowHover													"128 124 120 255"
+		TextGlowSelected											"171 169 166 255"
+		TextGlowHoverSm												"128 123 120 255"
+		TextGlowSelectedSm										"145 142 140 255"
+
+		ScrollGlyph														"204 198 192 255"
+		ScrollGlyphDisabled										"77 74 72 255"
+		ScrollGlyphFocus											"242 242 242 255"
+		ScrollBG															"77 74 72 255"
+
+		HeaderClient													"57 53 49 255"
+		HeaderDialog													"95 92 90 255"
+
+		TitleBar															"86 81 78 50"
+		TitleBarFocus													"176 169 162 50"
+
+		FocusGrid															"85 146 160 240"
+		Highlight															"Focus"
+		Highlight1														"Focus2"
+		Highlight2														"Focus2"
+		Highlight3														"173 69 71 255"
+		Highlight5														"77 109 140 255"
+		Highlight5a														"83 124 166 255"
+		Highlight5b														"59 85 98 255"
+
+		BackgroundStartSubtle									"20 20 20 155"
+		BackgroundStartSubtle									"31 31 31 45" [$OSX]
+		BackgroundStart												"none"
+		BackgroundStartOpaque									"36 35 34 255"
+
+		ClientBG															"0 0 0 255"
+		DialogBG															"56 54 53 255"
+
+		DarkClientBG													"36 35 34 255"
+		DarkDialogBG													"56 54 53 255"
+		DarkClientBGTransparent								"36 35 34 19"
+		DarkDialogBGTransparent								"none"
+
+		GameDetailsBlueTransparent						"Focus3"
+		GameDetailsGreenTransparent						"Focus3"
+		GameDetailsRedTransparent							"Focus3"
+
+		GameDetailsBlue												"Focus"
+		GameDetailsGreen											"Focus"
+		GameDetailsRed												"Focus"
+
+		PropertySheetBG												"74 72 70 255"
+		InteriorColor													"64 62 60 255"
+
+		DialogBorder													"119 117 115 255"
+
+		FillBG1																"64 62 60 255"
+		FillBG2																"71 69 67 255"
+
+		MenuBG1																"92 89 86 255"
+		MenuBG2																"61 59 58 255"
+
+		Divider																"107 104 101 255"
+		DarkImageBorder												"47 48 43 255"
+		DarkImageOverlay											"0 0 0 80"
+
+		ClayBG																"70 70 70 255"
+		ClayButtonBG													"87 88 88 255"
+		ClayEnabled														"85 88 82 255"
+		ClayKeyFocus													"89 92 77 255"
+		ClayMouseDown													"85 85 85 255"
+		ClayDisabledText											"128 134 126 255"
+		ClayLightGreen												"173 181 168 255"
+		ClayDimLightGreen											"166 172 162 255"
+		LightClayBG														"104 106 101 255"
+		LightClayButtonBG											"125 128 120 255"
+		DarkClayBG														"47 49 45 255"
+		p_ClayMouseDown												"94 94 94 255"
+		ClaySheetBottom												"92 90 87 255"
+		MaizeBG																"45 134 60 255"
+		GreenBG																"76 88 68 255"
+		LightGreenBG													"90 106 80 255"
+		DarkGreenBG														"62 70 55 255"
+		LightGrayBG														"121 126 121 255"
+		GrayBG																"77 73 71 255"
+		GrayBG2																"39 37 35 255"
+		TempGradientTop												"53 52 51 255"
+
+		html.secureurl												"White"
+		html.insecureurl											"White"
+
+		DragDrop.DragFrame										"255 255 255 192"
+		DragDrop.DropFrame										"150 255 150 255"
+
+		ListPanel.TextColor										"Text"
+		ListPanel.BgColor											"none"
+		ListPanel.SelectedTextColor						"TextentrySelected"
+		ListPanel.SelectedBgColor							"TextSelectedBG"
+		ListPanel.SelectedOutOfFocusBgColor		"ClientBG"
+		ListPanel.DisabledTextColor						"TextDisabled"
+		ListPanel.DisabledSelectedTextColor		"ClientBG"
+		ListPanel.EmptyListInfoTextColor			"Label"
+
+		TextEntry.IMEBGColor									"none"
+		TextEntry.IMEFGColor									"A2TextLabel"
+
+		WizardPanel.HeaderBGColor							"HeaderDialog"
+		PropertySheet.FlashTabColor						"A2TextFocusHover"
+
+		Friends.InGameColor										"A2FriendsInGame"
+		Friends.OnlineColor										"A2FriendsOnline"
+		Friends.OfflineColor									"A2FriendsOffline"
+		Friends.PanelDefault									"Label"
+		Friends.PanelOver											"Text"
+		Friends.PanelSelected									"ClientBG"
+		Friends.SectionHeader									"Label"
+		Friends.NoAvatarOver									"Text"
+		Friends.IgnoredColor									"A2FriendsOffline"
+
+		ChatDialog.URLColor										"A2ChatFriend"
+		ChatOwnTextColor											"A2ChatSelf"
+		ChatDialog.HistoryColor								"A2ChatHistory"
+		ChatGradientTop												"39 39 39 255"
+		ChatGradientBottom										"102 104 99 255"
+
+		AchievementPopup.TitleColor						"Text"
+		AchievementPopup.DescriptionColor			"180 180 180 255"
+
+		GiftOnlyInfo.ImagePanelColor					"GrayBG"
+	}
+}

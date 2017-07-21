@@ -1,0 +1,31 @@
+resource/layout/htmlimebar.layout {
+
+	styles {
+		CHTMLIMEBar {
+			minimum-height=50
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Bar )"
+			}
+		}
+
+		IMEEntry {
+			inset-top=-1
+			render_bg { }
+		}
+
+		CloseButtonSm {
+			image=graphics/none
+			render_bg { 0="image( x0 + 6, y0 + 8, x1, y1, graphics/onfocus/web/stop )" }
+		}
+
+		CloseButtonSm:hover {
+			render_bg { 0="image( x0 + 6, y0 + 8, x1, y1, graphics/onfocus/web/stop_hover )" }
+		}
+	}
+
+	layout {
+		region { name=box width=max height=max margin-left=20 margin-right=14 }
+			place { control=IMEEntry region=box height=max width=max margin-right=39 }
+			place { control=Close region=box align=right width=25 height=25 y=10 }
+	}
+}

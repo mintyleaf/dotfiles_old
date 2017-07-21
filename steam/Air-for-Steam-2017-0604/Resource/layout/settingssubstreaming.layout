@@ -1,0 +1,21 @@
+"resource/layout/settingssubstreaming.layout"
+{
+  layout {
+    place { control=DescriptionLabel dir=down width=max }
+    place { control=RemoteClientList start=DescriptionLabel dir=down width=max height=120 y=20 }
+
+    place { control=EnableStreaming start=RemoteClientList dir=down width=max y=10 }
+
+    place { control=SetPin start=EnableStreaming dir=down y=10 }
+    place { control=AdvancedHostOptions start=SetPin dir=down y=0 }
+    place { control=AdvancedClientOptions start=AdvancedHostOptions dir=down y=0 }
+
+    place { control=ClientLabel start=AdvancedClientOptions dir=down width=max y=30 }
+
+    place { control=QualityFast start=ClientLabel dir=down y=5 }
+    place { control=QualityBalanced start=QualityFast dir=right margin-left=10 }
+    place { control=QualityBeautiful start=QualityBalanced dir=right margin-left=10 }
+
+    place { control=HostLabel,HostDivider,ClientDivider,SupportInformationLabel height=0 width=0 }
+  }
+}

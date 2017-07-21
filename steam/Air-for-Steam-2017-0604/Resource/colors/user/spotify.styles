@@ -1,0 +1,31 @@
+resource/colors/spotify.styles {
+
+  colors {
+    Focus="40 40 40 255"
+      //Spotify sidebar grey
+
+    Focus2="46 189 89 255"
+      //Spotify green
+
+    Focus3="20 20 20 255"
+      //Spotify main grey
+
+    Focus4="20 20 20 150"
+      //Same as Focus3 but transparent
+
+    A2TextFocus="Focus2"
+      //Spotify green
+
+    A2TextFocusHover="30 215 96 255"
+      //Spotify hover green
+
+    //THEME OVERRIDES
+    A2Ribbon "24 24 24 255"
+    A2Divider "40 40 40 255"
+    //A2Snackbar "24 24 24 255" //Doesn't work with notifications
+    A2Menu "40 40 40 255"
+    A2MenuDivider "24 24 24 255"
+    A2Scroll "24 24 24 255"
+    A2ScrollHover "33 33 33 255"
+  }
+}

@@ -1,0 +1,8 @@
+"resource/layout/subpaneloptionscloud.layout"
+{
+	layout {
+		place { control=SteamCloudInfo						width=max }
+		place { control=EnableCloudCheck					start=SteamCloudInfo dir=down width=max y=20 }
+		place { control=EnableScreenshotsCheck		start=EnableCloudCheck dir=down width=max y=5 }
+	}
+}

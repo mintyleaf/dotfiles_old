@@ -1,0 +1,13 @@
+resource/layout/editfriendsgroups.layout {
+
+	layout {
+		region { name=body height=max width=max y=24 }
+		region { name=box height=max width=max region=body margin-left=26 margin-right=26 }
+			place { control=description region=box width=max }
+			place { control=TagChecks region=box start=description dir=down y=20 width=max height=140 }
+			place { control=TextEntry region=box start=TagChecks dir=down y=10 width=max }
+			place { control=AddTagButton region=box start=TextEntry dir=down y=20 align=top-center }
+
+		//place { control= height=0 width=0 margin-left=-9999 }
+	}
+}

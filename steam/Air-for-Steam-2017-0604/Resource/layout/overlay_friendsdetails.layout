@@ -1,0 +1,23 @@
+resource/layout/overlay_friendsdetails.layout {
+
+	styles {
+		detailsbox {
+		}
+
+		button {
+			minimum-height=0 //reset for button height
+			padding-right=0 padding-left=0
+			render_bg { }
+		}
+
+		button:hover {
+			textcolor=A2TextFocusHover
+		}
+	}
+
+	layout {
+		place { control=AllFriendsButton,ViewPlayersButton height=20 spacing=35 }
+
+		place { control=TitleText,TextThisManyFriends,grid height=0 width=0 }
+	}
+}

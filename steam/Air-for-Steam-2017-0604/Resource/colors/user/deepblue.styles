@@ -1,0 +1,22 @@
+resource/colors/deepblue.styles {
+
+	colors {
+		Focus="0 70 92 255"
+			//
+
+		Focus2="200 200 200 255"
+			//for text
+
+		Focus3="0 60 82 255"
+			//darker hue (-5% brightness)
+
+		Focus4="62 62 62 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="Focus2"
+			//
+
+		A2TextFocusHover="Focus2"
+			//
+	}
+}

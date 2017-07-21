@@ -1,0 +1,25 @@
+"resource/layout/musicplayervolumepanel.layout"
+{
+	styles {
+
+		CMusicPlayerVolumePanel {
+			minimum-width=150
+			minimum-height=30
+			bgcolor=A2Snackbar
+		}
+
+		VolumeSlider {
+			bgcolor=none
+			textcolor=A2TextNotification //slider color
+		}
+
+		VolumeSlider:focus {
+			textcolor=A2TextNotification //slider color
+		}
+	}
+
+	layout
+	{
+		place { control="VolumeSlider" height=max width=max align=top-center margin-left=10 margin-right=10 }
+	}
+}

@@ -1,0 +1,47 @@
+resource/layout/gamespage_details_dlc.layout {
+
+	colors {
+		//margin-top + margin-btm + button-height + desired button spacing + y-spacing + dlclist height
+		//20 + 30 + 26 + 20 + 60 + 120
+		GameDetailsDLC.ExtraVerticalSpacing "276"
+	}
+
+	styles {
+		dlcdetails {
+			bgcolor=none
+			render_bg {
+				0="fill( x0, y0, x1, y0 + 1, A2Divider )"
+				1="fill( x0, y0 + 1, x1, y1, A2Ribbon )"
+			}
+		}
+
+		ListPanelColumnHeader {
+			inset-top=1
+			padding-left=0
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+			}
+		}
+
+		ListPanelInterior {
+			inset-left=-3
+		}
+
+		mostrecenttime {
+		}
+	}
+
+	layout {
+		region { name=body width=max height=max margin-top=20 margin-bottom=30 margin-left=20 margin-right=20 }
+
+		place { region=body control=headerlabel width=max }
+
+		place { region=body y=60 control=latestimage width=257 height=120 }
+		place { region=body y=60 control=overlayimage width=257 height=120 }
+		place { region=body y=60 control=dlclist x=277 width=max height=120 }
+
+		place { region=body align=bottom control=moredlc margin-bottom=1 }
+
+		place { control=latesttimelabel height=0 width=0 }
+	}
+}

@@ -1,0 +1,33 @@
+resource/layout/gamespage_details_subheader_labels.layout {
+
+	styles {
+		CDetailsSubHeaderLabelsPanel {
+			render_bg {
+				//0="fill( x0 - 30, y0 - 10, x1 + 30, y1 + 10, AD100 )"
+			}
+		}
+
+		headertext {
+			padding-bottom=2 padding-top=2
+		}
+
+		headertext-red {
+			padding-bottom=2 padding-top=2
+		}
+
+		headertext-green {
+			padding-bottom=2 padding-top=2
+		}
+
+		headertext-blue {
+			padding-bottom=2 padding-top=2
+		}
+
+		valuetext {
+			padding-bottom=2 padding-top=3
+		}
+	}
+
+	layout {
+	}
+}

@@ -1,0 +1,19 @@
+"resource/layout/layoutdebugdialog_details.layout"
+{
+	styles {
+		Page {
+			bgcolor=A2Background
+			render_bg {
+				0="fill( x0 - 6, y0 + 2 , x1 + 6, y1 + 18, A2Background )"
+			}
+		}
+	}
+
+	layout {
+		place { control="style_label" x=8 y=8 width=170 }
+		place { control="style_list" x=8 y=30 width=160 }
+
+		place { control="parent_label" x=176 y=8 width=170 }
+		place { control="parent_list" x=176 y=30 width=160 }
+	}
+}

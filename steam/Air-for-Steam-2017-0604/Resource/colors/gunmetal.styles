@@ -1,0 +1,22 @@
+resource/colors/gunmetal.styles {
+
+	colors {
+		Focus="32 32 32 255"
+			//material 500
+
+		Focus2="60 69 68 255"
+			//lighter hue (+28 +37 +36)
+
+		Focus3="20 20 20 255"
+			//darker hue (-5% brightness)
+
+		Focus4="20 20 20 150"
+			//Focus3 transparent for details box
+
+		A2TextFocus="0 188 212 255"
+			//sky focus
+
+		A2TextFocusHover="77 208 225 255"
+			//sky focus2
+	}
+}

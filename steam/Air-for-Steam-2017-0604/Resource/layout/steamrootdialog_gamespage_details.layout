@@ -1,0 +1,58 @@
+resource/layout/steamrootdialog_gamespage_details.layout {
+
+  styles {
+    CGamesPage_Details {
+      bgcolor=A2Ribbon
+    }
+
+    CGamesListPanel {
+      render_bg {
+        0="fill( x0, y0, x1 - 13, y1, A2Background )"
+        1="fill( x1 - 13, y0, x1, y1, A2Ribbon )"
+      }
+    }
+
+    "CGamesListPanel ListPanelInterior" {
+      minimum-width="262"
+    }
+
+    headerimage {
+      bgcolor=none
+    }
+  }
+
+  layout {
+    place { control=DetailsBorder width=max height=max }
+
+    region { name=list width=275 height=max }
+      place { control=GamesList region=list width=275 height=max margin-top=-1 }
+
+    region { name=details x=275 width=max height=max overflow=scroll-vertical }
+      place { control=gametitleheader region=details y=70 dir=down align=top-center margin-left=40 margin-right=40  }
+      place { control=gamesubheader region=details start=gametitleheader dir=down align=top-center }
+      place { control=emptylisttext region=details width=max height=max margin=16 }
+
+      place { control=headerimagea region=details width=1024 height=550 align=top-center margin-left=-120 }
+      place { control=headerimageb region=details width=1024 height=550 align=top-center margin-left=-120 }
+
+      place {
+        control=welcomedetails,turnnotifications,nonsteamdetails,achievementsdetails,friendsdetails,dlcdetails,clouddetails,communityfilesdetails,newsdetails,screenshotsdetails
+        region=details
+        y=499
+        dir=down
+        width=max
+      }
+
+    region { name=links y=360 region=details width=max height=139 }
+      place { control=tagslabel region=links height=139 width=max }
+
+    region { name=linksleft region=links width=215 height=124 align=left }
+      place { control=gamehublink,forumlink,ogglink,guideslink,recommendlink region=linksleft dir=down align=left y=17 x=20 spacing=6 }
+    region { name=linkscenter region=links width=160 height=124 align=top-center }
+      place { control=storelink,sendguestpasslink,manuallink,dlclink,cdkeylink,supportlink,editconfiglink region=linkscenter dir=down align=left y=17 spacing=6 }
+    region { name=linksright region=links width=215 height=124 align=right }
+      place { control=edittagslink,*taglink region=linksright dir=down align=left y=17 spacing=6 }
+
+    place { control=linkslabel,guidelink,newslink,achievementslink width=0 height=0 }
+  }
+}

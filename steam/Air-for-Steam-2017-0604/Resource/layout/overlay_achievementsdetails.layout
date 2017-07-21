@@ -1,0 +1,23 @@
+resource/layout/overlay_achievementsdetails.layout {
+
+	styles {
+		detailsbox {
+		}
+
+		button {
+			minimum-height=0 //reset for button height
+			padding-right=0 padding-left=0
+			render_bg { }
+		}
+
+		button:hover {
+			textcolor=A2TextFocusHover
+		}
+	}
+
+	layout {
+		place { control=ViewAchievementsButton height=20 }
+
+		place { control=*achievement,TitleText,progressbackground,progressbarimage,ProgressTextEarned height=0 width=0 }
+	}
+}

@@ -1,0 +1,26 @@
+resource/colors/user/google.styles {
+
+  colors {
+    Focus="66 133 244 255"
+      //blue
+
+    Focus2="244 180 0 255"
+      //yellow
+
+    Focus3="15 157 88 255"
+      //green
+
+    Focus4="15 157 88 150"
+      //Focus3 transparent for details box
+
+    A2TextFocus="219 68 55 255"
+      //red
+
+    A2TextFocusHover="Focus2"
+      //
+
+    //THEME OVERRIDES
+    A2Scroll "244 180 0 255"
+    A2ScrollHover "244 200 20 255"
+  }
+}

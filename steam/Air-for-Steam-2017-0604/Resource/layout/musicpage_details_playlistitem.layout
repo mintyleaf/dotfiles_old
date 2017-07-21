@@ -1,0 +1,27 @@
+"resource/layout/musicpage_details_playlistitem.layout"
+{
+	styles {
+
+		PositionLabelStyle {
+			padding-right=10
+		}
+
+		TrackLabelStyle {
+			render_bg {
+				0="fill( x0 - 50, y1 - 1, x1, y1, A2Divider )"
+			}
+		}
+
+		TrackLabelStyle:hover {
+			render_bg {
+				0="fill( x0 - 50, y0, x1, y1, A2Divider )"
+			}
+		}
+	}
+
+	layout {
+
+		place {	control=PositionLabel 	width=40 height=max }
+		place {	control=TrackLabel 			x=50 width=max height=max }
+	}
+}

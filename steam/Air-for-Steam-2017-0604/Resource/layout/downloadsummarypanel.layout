@@ -1,0 +1,35 @@
+resource/layout/downloadsummarypanel.layout {
+
+	styles {
+		CDownloadSummaryPanel { render_bg { } }
+
+		NetGraphPanel { textcolor=AL40 bgcolor=none inset="0 0 0 0" }
+		NetLegendPanel { bgcolor=AL40 }
+
+		DiscGraphPanel { textcolor=Focus2 bgcolor=none inset="0 0 0 0" }
+		DiskLegendPanel { bgcolor=Focus2 }
+	}
+
+	layout {
+		region { name=box height=max width=max margin-left=26 margin-right=26 y=16 }
+		region { name=graph y=50 height=80 width=max }
+
+		place { control=net_graphpanel region=graph width=max height=max }
+		place { control=disc_graphpanel region=graph width=max height=max }
+
+		place { control=pauseresumeallbutton region=box align=right }
+
+		place { region=box control=net_legend_panel height=51 width=5 y=8 }
+		place { region=box control=download_rate,download_rate_value x=15 y=7 spacing=10 }
+		place { region=box control=peak_download_rate,peak_download_rate_value x=15 y=26 spacing=10 }
+		place { region=box control=total_downloaded,total_downloaded_value x=15 y=45 spacing=10 }
+
+		place { region=box control=disk_legend_panel y=75 height=13 width=5 }
+		place { region=box control=disk_status_label,disk_status_value x=15 y=74 spacing=10 }
+
+		place { region=box control=blackout_label,blackout_value y=7 spacing=10 align=top-center }
+		place { region=box control=throttling_label,throttling_value y=26 spacing=10 align=top-center }
+
+		place { control=net_legend_label,disk_legend_label,header height=0 width=0 }
+	}
+}

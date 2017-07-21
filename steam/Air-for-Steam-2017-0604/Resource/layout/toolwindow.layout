@@ -1,0 +1,64 @@
+resource/layout/toolwindow.layout {
+
+	styles {
+		PageTab {
+			minimum-height=30
+		}
+
+		MenuButton {
+			minimum-height=29
+			minimum-width=16
+			render {
+				0="fill( x0, y0, x1, y1, Focus3 )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/onfocus/caret_down_onfocus )"
+			}
+		}
+
+		MenuButton:hover {
+			render {
+				0="fill( x0, y0, x1, y1, Focus3 )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/onfocus/caret_down_onfocus_hover )"
+			}
+		}
+
+		TabMenuButtonFlash {
+			bgcolor=none
+			render {
+				0="fill( x0, y0, x1, y1, Focus3 )"
+				1="image( x0 + 2, y0 + 7, x1, y1, graphics/onfocus/caret_down_onfocus_hover )"
+			}
+		}
+
+		TabMenuItemFlash {
+			textcolor=A2TextFocusHover
+		}
+
+		TabPageCloseButton {
+			padding-right=23
+		}
+
+		//new tab button
+		Button {
+			textcolor=none //don't render "X" as text
+			render_bg {
+				1="image( x0 + 5, y0 + 6, x1, y1, graphics/onfocus/add )"
+			}
+		}
+
+		Button:hover {
+			render_bg {
+				1="image( x0 + 5, y0 + 6, x1, y1, graphics/onfocus/add_hover )"
+			}
+		}
+	}
+
+	layout {
+		region { name=header height=50 width=max }
+			place { control=frame_minimize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
+			place { control=frame_captiongrip margin=2 width=max height=50 }
+
+		place { control=ToolWindowSheet x=0 y=46 height=max width=max }
+
+		place { control=frame_maximize height=0 width=0 margin-left=-9999 }
+	}
+}

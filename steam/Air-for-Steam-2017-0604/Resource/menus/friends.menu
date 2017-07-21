@@ -1,0 +1,19 @@
+"menubar"
+{
+	Friends {
+		text="#steam_menu_friends_view"
+
+		ViewProfile					{	text="#steam_menu_view_profile"						shellcmd="steam://url/SteamIDMyProfile" }
+		SetProfileName			{	text="#steam_menu_set_profile"						shellcmd="steam://settings/friends" }
+		ChangeAvatar				{	text="#steam_menu_set_avatar"							shellcmd="steam://url/SteamIDEditPage" }
+		Divider 						{ }
+		AddFriend						{	text="#steam_menu_friends_add"						shellcmd="steam://friends/add" }
+		Divider 						{ }
+		SortByName					{	text="#steam_menu_friends_sortbyname"			shellcmd="steam://friends/settings/sortbyname"	checkable=1 }
+		ShowAvatars					{	text="#steam_menu_friends_showavatars"		shellcmd="steam://friends/settings/showavatars"	checkable=1 }
+		OnlineUsersOnly			{	text="#steam_menu_friends_hideoffline"		shellcmd="steam://friends/settings/hideoffline"	checkable=1 }
+		ShowTagged					{	text="#steam_menu_friends_showtagged"			shellcmd="steam://friends/settings/showtagged"	checkable=1 }
+		Divider 						{ }
+		Settings						{	text="#steam_menu_friends_settings"				shellcmd="steam://settings/friends" }
+	}
+}

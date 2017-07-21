@@ -1,0 +1,38 @@
+resource/layout/musiclibrarypanel.layout {
+  styles {
+    LibrarySearch {
+      minimum-width=180
+    }
+
+    MusicPlayerIcon {
+      image=graphics/active/music/player
+    }
+
+    NavLabel2 {
+      image=graphics/none
+      render {
+        0="image( x0, y0, x1, y1, graphics/onfocus/add )"
+      }
+    }
+  }
+
+  layout {
+    region { name=header height=50 width=max }
+      place { control=frame_close height=22 width=22 y=13 align=right margin-right=20 }
+      place { control=frame_captiongrip margin=2 width=max height=50 }
+
+    region { name=nav height=50 width=max }
+    region { name=body height=max width=max y=50 }
+      place { control=MusicPage_Details_Content region=body height=max width=max }
+
+      place {
+        control=library_search
+        region=nav height=22 x=19 y=10
+      }
+
+      place { control=library_music_menu x=262 y=52 height=21 width=20 }
+      place { control=library_music_player_icon align=right y=64 height=24 width=34 margin-right=34 }
+
+      place { control=subnavgroup_library,label_search_icon,library_music_add_button height=0 width=0 margin-left=-9999 }
+  }
+}

@@ -1,0 +1,20 @@
+resource/layout/gameproperties_updates.layout {
+
+	layout {
+		region { name=box height=max width=max y=30 margin-left=16 }
+			place { control=AutoUpdatesLabel region=box }
+			place { control=UpdateCombo region=box start=AutoUpdatesLabel dir=down y=5 width=max }
+			place { control=UpdateNewsURL region=box start=UpdateCombo dir=down y=20 }
+
+			place { control=BackgroundDownloadsLabel region=box start=UpdateNewsURL dir=down y=30 }
+			place { control=BackgroundDownloadsCombo region=box start=BackgroundDownloadsLabel dir=down y=5 width=max }
+
+			place { control=CloudLabel region=box start=BackgroundDownloadsCombo dir=down y=30 }
+				place { control=CloudUsageLabel region=box start=CloudLabel dir=right x=20 }
+			place { control=EnableCloudCheck region=box start=CloudLabel dir=down y=10 }
+			place { control=CloudEnableLinkLabel region=box start=EnableCloudCheck dir=down y=20 }
+			place { control=CloudEnableLinkLabelExtraText region=box start=CloudEnableLinkLabel dir=down y=10 }
+
+		place { control=Divider1,Divider2,UpdateInfoText,BackgroundDownloadsInfo,CloudInfoLabel height=0 width=0 margin-left=-9999 }
+	}
+}

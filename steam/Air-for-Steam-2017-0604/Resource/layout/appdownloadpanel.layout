@@ -1,0 +1,108 @@
+resource/layout/appdownloadpanel.layout {
+
+	styles {
+		panelStyle {
+			minimum-height=180
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Ribbon )"
+			}
+			render {
+				0="fill( x0, y1 - 1, x1, y1, A2Divider )"
+			}
+		}
+
+		panelStyleHighlight {
+			minimum-height=180
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2Ribbon )"
+			}
+			render {
+				0="fill( x0, y1 - 1, x1, y1, A2Divider )"
+			}
+		}
+
+		links {
+			padding-left=8 padding-right=8
+			minimum-height=30
+			render_bg { }
+		}
+
+		links:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonHover )"
+			}
+		}
+
+		links:active {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonActive )"
+			}
+		}
+
+		settingslink {
+			padding-left=8 padding-right=8
+			minimum-height=30
+			render_bg { }
+		}
+
+		settingslink:hover {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonHover )"
+			}
+		}
+
+		settingslink:active {
+			render_bg {
+				0="fill( x0, y0, x1, y1, A2ButtonActive )"
+			}
+		}
+
+		SlimProgressBar {
+			bgcolor=none
+			render_bg {
+				0="fill( x0 + 1, y0, x1 - 1, y1, none )"
+			}
+			render { }
+		}
+
+		SmRemoveButton
+			{ minimum-height=24 minimum-width=24 padding-left=0 padding-right=0
+				render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+
+		SmRemoveButton:hover
+			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+
+		SmRemoveButton:active
+			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/remove )" } }
+
+		topOfQueueButton
+			{ minimum-height=24 minimum-width=24 padding-left=0 padding-right=0
+				render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+
+		topOfQueueButton:hover
+			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+
+		topOfQueueButton:active
+			{ render_bg { } render { 1="image( x0, y0, x1, y1, graphics/active/downloads/top )" } }
+	}
+
+	layout {
+		region { name=box height=max width=max margin-left=26 margin-right=26 }
+		region { name=column2 region=box x=204 width=max height=max }
+
+		place { control=updatetypelabel,namelabel region=box y=18 spacing=20 margin-right=182 }
+		place { control=removefromqueuebutton,topofqueuebutton region=box y=26 align=right spacing=10 }
+
+		place { control=gameimage region=box y=75 height=69 width=184 }
+
+		place { control=downloadtotallabel,downloadtotalfield region=column2 spacing=10 y=75 height=19 }
+		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column2 spacing=10 y=101 height=19 }
+		place { control=timeremaininglabel,timeremainingfield region=column2 spacing=10 y=127 height=19 }
+
+		place { control=launchbutton,newslink,settingslink region=box y=65 align=right dir=down }
+
+		place { control=downloadprogressbar align=bottom height=5 width=max }
+
+		place { control=dashlabel,spacer,workshopbanner height=0 width=0 }
+	}
+}

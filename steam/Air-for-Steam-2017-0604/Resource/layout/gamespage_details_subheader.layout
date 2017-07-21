@@ -1,0 +1,116 @@
+resource/layout/gamespage_details_subheader.layout {
+
+	colors {
+		GameDetailsSubHeader.HorizontalSpacing=10
+		GameDetailsSubHeader.VerticalMargin=100
+	}
+
+	styles {
+		CDetailsGameSubHeaderPanel {
+			bgcolor=none
+		}
+
+		ClientListButton {
+			image=graphics/none
+			minimum-height=0 //reset for button height
+			inset-left=999 //remove default dropdown arrow
+			render_bg {
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast )"
+			}
+		}
+
+		ClientListButton:hover {
+			image=graphics/none
+			render_bg {
+				0="image( x0 + 3, y0 + 3, x1, y1, graphics/onfocus/game_cast_hover )"
+			}
+		}
+
+		DetailsLaunchButton {
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
+		}
+
+		DetailsLaunchButton:hover {
+			bgcolor=A2DetailsButtonHover
+		}
+
+		DetailsLaunchButton:active {
+			render_bg {
+				0="fill( x0 - 4, y0, x0, y1, Focus )"
+				1="fill( x1, y0, x1 + 4, y1, Focus )"
+				2="fill( x0 - 4, y0 - 4, x1 + 4, y0, Focus )"
+				3="fill( x0 - 4, y1, x1 + 4, y1 + 4, Focus )"
+			}
+		}
+
+		DetailsInstallButton {
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
+		}
+
+		DetailsInstallButton:hover {
+			bgcolor=A2DetailsButtonHover
+		}
+
+		DetailsInstallButton:active {
+			render_bg {
+				0="fill( x0 - 4, y0, x0, y1, Focus )"
+				1="fill( x1, y0, x1 + 4, y1, Focus )"
+				2="fill( x0 - 4, y0 - 4, x1 + 4, y0, Focus )"
+				3="fill( x0 - 4, y1, x1 + 4, y1 + 4, Focus )"
+			}
+		}
+
+		DetailsBuyButton {
+			padding-left=30 padding-right=30 padding-top=10 padding-bottom=10
+			bgcolor=A2DetailsButton
+		}
+
+		DetailsBuyButton:hover {
+			bgcolor=A2DetailsButtonHover
+		}
+
+		DetailsBuyButton:active {
+			render_bg {
+				0="fill( x0 - 4, y0, x0, y1, Focus )"
+				1="fill( x1, y0, x1 + 4, y1, Focus )"
+				2="fill( x0 - 4, y0 - 4, x1 + 4, y0, Focus )"
+				3="fill( x0 - 4, y1, x1 + 4, y1 + 4, Focus )"
+			}
+		}
+	}
+
+	layout {
+		// Y offset here should match the vertical padding value above in the colors section
+		region { name="header" y=0 x=0 width=max height=max }
+
+		place {
+			control=subheaderlabels
+			region=header
+			dir=down
+			align=top-center
+			y=20
+		}
+
+		place {
+			control=clientlist //in-home streaming button
+			start=subheaderlabels
+			region=header
+			align=top-center
+			dir=down
+			height=30 width=30
+			y=4
+		}
+
+		place {
+			control=launchbutton
+			start=subheaderlabels
+			region=header
+			align=top-center
+			dir=down
+			//height=70 width=70
+			y=40
+		}
+	}
+}

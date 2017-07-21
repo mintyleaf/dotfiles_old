@@ -1,0 +1,28 @@
+"resource/layout/gamespage_details_news_item.layout"
+{
+	colors
+	{
+		// The extra space needed vertical beyond the autocomputed size of the blurb contents
+		// this is used in code to make the vertical size of the panel fit the title/author/morelink
+		// and should be updated if you change vertical padding/margins/layout.
+		GameDetailsNewsItem.ExtraVerticalSpacing "84"
+
+		// Override base style rich text x inset inside this control
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+	
+	styles
+	{
+	}
+
+	layout
+	{
+		region { name=body width=max }
+
+		place { region=body control=newsitem_title width=max height=24 }
+		place { region=body y=17 control=newsitem_dateandauthor width=max height=24 }
+		place { region=body y=43 control=newsitem_body width=max }
+		place { region=body control=newsitem_more align=bottom margin-bottom=20 }
+	}
+}
