@@ -2,8 +2,8 @@
 
 import urllib.request, json
 
-city = "117574"
-api_key = "8eb1b4c2ce59a94671ef16ada9fbb2bd"
+city = "post index here"
+api_key = "api key here"
 units = "Metric"
 unit_key = "C"
 
