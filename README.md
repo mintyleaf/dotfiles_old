@@ -4,25 +4,33 @@ my lovely bspwm + polybar dots
 # About my setup (copypasted from neofetch =D)
 
 * OS: Arch Linux x86_64 
-* Kernel: 4.11.11-1-ck-ivybridge 
-* Shell: zsh 5.3.1 
+* Kernel: linux-ck-ivybridge 
+* Shell: zsh
 * WM: bspwm 
-* Theme: Arc-Grey-Dark [GTK2/3] 
+* Theme: Oomox-Ship-Pines [GTK2/3]
 * Icons: Papirus-Dark-Gray [GTK2/3] 
 * Terminal: urxvt 
+* Terminal Font: Source Code Pro 9
 * CPU: Intel i5-3550 (4) @ 3.700GHz 
 * GPU: NVIDIA GeForce GTS 450 
-* Font: Cantarell 10 [GTK2/3]  
+* Font: Cantarell 9 [GTK2/3]  
 
 # Screenshots
 
-### Ncmpcpp + cli-vis layout
-![mpd](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/image_2017-07-21_13-57-22.png)
-### Firefox + Telegram layout
-![web](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/image_2017-07-21_13-57-59.png)
-### Neofetch + cmatrix + htop + nvim
-![term](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/image_2017-07-21_14-20-49.png)
-### Steam custom skin (Air) with custom colors
-![steam](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/image_2017-07-21_14-21-16.png)
-### ranger
-![ranger](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/image_2017-07-21_14-22-16.png)
+### Chromium (vimperator) + Telegram
+![web](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/chromium_vimperator_telegram.png)
+### ncmpcpp + vis
+![mpd](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/ncmpcpp_vis.png)
+### tmux (shell + youtube-viewer + ranger) 
+![tmux](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/tmux_shell.png)
+![tmux](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/tmux_youtube.png)
+![tmux](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/tmux_ranger.png)
+### youtube mpv playback
+![youtube](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/youtube_mpv.png)
+### nvim layout
+![nvim](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/nvim.png)
+### dropdown term
+![down](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/dropdown.png)
+### rofi + rofi alt-tab
+![rofi](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/rofi.png)
+![rofi](https://github.com/mintyleaf/dotfiles/blob/master/screenshots/alttab_rofi.png)
