@@ -1,0 +1,4 @@
+neww -n shell 'mintfetch && zsh'
+neww -n youtube 'clear & youtube-viewer'
+neww -n ranger ranger
+select-window -t default:1

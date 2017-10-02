@@ -1,7 +1,7 @@
 ; mintyleaf polybar config
 
 [colors]
-background = #383838
+background = #2d2d30
 background-alt = #575757
 foreground = #dfdfdf
 foreground-alt = #999999
@@ -10,7 +10,7 @@ alert = #ff9999
 
 [bar/def]
 width = 100%
-height = 28
+height = 30
 fixed-center = true
 override-redirect = true
 wm-restack = bspwm
@@ -22,7 +22,7 @@ line-size = 0
 line-color = #00000000
 
 border-size = 7
-border-top-size = 6
+border-top-size = 4
 border-color = #00000000
 
 padding-left = 0
@@ -35,8 +35,8 @@ font-1 = FontAwesome:pixelsize=9;2
 font-2 = Weather\Icons:pixelsize=9;2
 font-3 = siji:pixelsize=10;2
 
-modules-left = mpd bspwm 
-modules-center = xwindow
+modules-left = bspwm
+modules-center = mpd
 modules-right = xkeyboard volume weather date
 
 scroll-up = bspwm-desknext
@@ -56,7 +56,7 @@ blacklist-2 = caps lock
 
 format-prefix = "  "
 label-layout = %layout%
-format-background = #404040
+format-background = #38383c
 format-padding = 3
 
 [module/bspwm]
@@ -64,16 +64,16 @@ type = internal/bspwm
 
 ws-icon-0 = browser;
 ws-icon-1 = mpd;
-ws-icon-2 = code;
-ws-icon-3 = term;
+ws-icon-2 = term;
+ws-icon-3 = code;
 ws-icon-4 = games;
 ws-icon-default =  
 
 label-focused = %icon%
-label-focused-background = #666666 
+label-focused-background = #505054 
 label-focused-padding = 3
 
-label-occupied-background = #4d4d4d
+label-occupied-background = #38383c
 label-occupied = %icon%
 label-occupied-padding = 3
 
@@ -118,8 +118,8 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 [module/mpd]
 type = internal/mpd
-format-online = %{B#575757}   <icon-prev>   <toggle>   <icon-next>   <label-song>   <label-time>   %{B-} 
-format-stopped = %{B#575757}   <icon-prev>   <toggle>   <icon-next>   0:00/0:00   %{B-}
+format-online = <label-song>   <label-time>
+format-stopped = 0:00/0:00
 ;label-song-padding = 3
 
 bar-progress-width = 25
@@ -148,7 +148,7 @@ date = %A, %d.%m
 
 time = %H:%M
 
-label-background = #575757
+label-background = #5a5a5f
 label-padding = 3
 label =   %date%  %time% 
 
@@ -158,10 +158,10 @@ type = internal/volume
 format-volume = <ramp-volume>   <label-volume>
 label-muted-foreground = ${colors.foreground}
 label-volume-foreground = ${colors.foreground}
-format-volume-background = #454545
+format-volume-background = #444448
 format-volume-padding = 3
 format-muted-padding = 3
-format-muted-background = #454545
+format-muted-background = #444448
 
 ;format-muted-prefix = "──── %{F-}x "
 format-muted-foreground = ${colors.foreground-alt}
@@ -188,7 +188,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = custom/script
 interval = 10
 format = <label>
-format-background = #4d4d4d
+format-background = #505054
 format-padding = 3
 label-font=3
 exec = python ~/.config/polybar/weather

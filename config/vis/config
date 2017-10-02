@@ -55,9 +55,9 @@ visualizer.spectrum.falloff.weight=0.9
 
 ##Margins in percent of total screen for spectrum visualizer. All margins default to 0
 visualizer.spectrum.top.margin=0.1
-visualizer.spectrum.bottom.margin=0.04
+visualizer.spectrum.bottom.margin=0.00
 visualizer.spectrum.right.margin=0.00
-visualizer.spectrum.left.margin=0.04
+visualizer.spectrum.left.margin=0.03
 
 ##Reverses the direction of the spectrum so that high freqs are first and low freqs last. Defaults to false.
 #visualizer.spectrum.reversed=false

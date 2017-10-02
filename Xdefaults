@@ -1,0 +1,57 @@
+Xft.rgba: rgba
+URxvt.font:             xft:Source Code Pro:pixelsize=12, \
+xft:Symbola:pixelsize=12
+URxvt.letterSpace:	-2
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      firefox
+URxvt.matcher.button:   1
+URxvt.scrollBar:	false
+URxvt.internalBorder:	16
+URxvt.cursorUnderline:	True
+URxvt.cursorBlink:	True
+
+URxvt.keysym.C-Up:     \033[1;5A
+URxvt.keysym.C-Down:   \033[1;5B
+URxvt.keysym.C-Right:  \033[1;5C
+URxvt.keysym.C-Left:   \033[1;5D
+URxvt.keysym.C-Prior:  \033[5;5~
+URxvt.keysym.C-Next:   \033[6;5~
+URxvt.keysym.C-Home:   \033[7;5~
+URxvt.keysym.C-End:    \033[8;5~
+
+! special
+*.foreground:   #b9b9b9
+*.background:   #2d2d30
+*.cursorColor:  #888888
+
+! black
+*.color0:       #303034
+*.color8:       #525256
+
+! red
+*.color1:       #7c7c80
+*.color9:       #7c7c80
+
+! green
+*.color2:       #8e8e91
+*.color10:      #8e8e91
+
+! yellow
+*.color3:       #a0a0a4
+*.color11:      #a0a0a4
+
+! blue
+*.color4:       #68686c
+*.color12:      #68686c
+
+! magenta
+*.color5:       #747478
+*.color13:      #747478
+
+! cyan
+*.color6:       #86868a
+*.color14:      #86868a
+
+! white
+*.color7:       #b9b9bc
+*.color15:      #f7f7f7

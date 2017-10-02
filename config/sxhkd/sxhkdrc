@@ -3,7 +3,11 @@
 
 # terminal emulator
 super + Return
-	urxvt 
+	urxvt
+
+# negative -w arg to account for a border width (default: 100%)
+@F12
+    tdrop -ma -w -4 -y "$PANEL_HEIGHT" -h 500 -s dropdown urxvt
 
 # program launcher
 super + d
@@ -62,7 +66,10 @@ super + ctrl + {x,y,z}
 #
 # focus/swap
 #
-
+super + alt + {Left,Down,Up,Right}
+    xdotool getwindowfocus windowmove --relative %1 {-20 0, 0 +20, 0 -20, +20 0}
+super + alt + {h,j,k,l}
+    xdotool getwindowfocus windowmove --relative %1 {-20 0, 0 +20, 0 -20, +20 0}
 # focus the node in the given direction
 super + {_,shift + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
@@ -116,8 +123,24 @@ super + ctrl + shift + space
 
 # screenshots
 super + p
-	maim | xclip -selection clipboard -t image/png
+	maim | xclip -selection clipboard -t image/png & notify-send -u low "Screenshot!"
 super + shift + p
-	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png & notify-send -u low "Screenshot!"
 super ctrl + p
-	maim -s | xclip -selection clipboard -t image/png
+	maim -s | xclip -selection clipboard -t image/png & notify-send -u low "Screenshot!"
+
+# mpc
+super + F7
+	mpc toggle
+super + F6
+	mpc next
+super + F5
+	mpc prev
+super + F8
+	mpc stop
+super + F4
+	amixer sset Master toggle
+super + F3
+	amixer sset Master 5%+
+super + F2 
+	amixer sset Master 5%-

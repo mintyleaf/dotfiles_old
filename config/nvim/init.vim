@@ -1,12 +1,15 @@
 " What a mess..
 
+set clipboard=unnamed
+set splitbelow
+set splitright
 set number
 set showcmd
 set noswapfile
 set autoindent
+set guicursor=
 syntax on
-colorscheme gruvbox
-set background=dark
+colorscheme moonscape
 let g:airline_theme='base16_grayscale'
 " powerline symbols
 if !exists('g:airline_symbols')

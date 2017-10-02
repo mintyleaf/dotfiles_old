@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="nicoulaj"
+ZSH_THEME="minimal"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git python vim-interaction web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,4 +91,4 @@ alias ntt='wine ~/.wine/drive_c/Program\ Files/Steam/steamapps/common/Nuclear\ T
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=8
 export EDITOR=nvim
-
+export KEYTIMEOUT=1

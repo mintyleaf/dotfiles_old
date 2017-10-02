@@ -1,46 +1,61 @@
 #! /bin/sh
 
 sxhkd &
+dunst &
+unclutter &
 sh ~/.config/polybar/launch.sh &
 feh --bg-fill ~/bg.jpg &
 setxkbmap -layout us,ru -option grp:alt_shift_toggle &
 redshift -l 55.5:37.5 &
-mpc load default &
 caffeine -a &
 sh -c 'sleep 5; exec amixer -c0 set 'Headphone' on 100%' &
-python ~/mpd_current.py &
 sh -c 'sleep 5; exec xsetroot -cursor_name left_ptr' &
+pulseaudio &
+python ~/dunst_fullscreen.py &
 
-bspc monitor -d browser mpd code term games 6
+bspc monitor -d browser mpd term code games 6
 
-bspc config border_width         0
-bspc config window_gap		 7
+bspc config border_width         4
 bspc config top_padding 	 34
 bspc config click_to_focus	 true
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config presel_feedback_color '#999999'
-bspc config pointer_modifier	 shift
+bspc config presel_feedback_color '#7c7c80'
+bspc config normal_border_color  '#404044'
+bspc config focused_border_color '#525256'
+bspc config pointer_modifier	 mod4
 
-bspc rule -a URxvt:neofetch -o state=floating
-bspc rule -a URxvt:ranger -o state=floating
-bspc rule -a qjackctl -o state=floating
-bspc config -d mpd window_gap 267
+bspc rule -a qjackctl state=floating
+bspc rule -a milkytracker state=pseudo_tiled
+bspc rule -a mpv state=floating
+bspc config -d mpd window_gap 262
 bspc config -d mpd top_padding -34
 
-# mpd layout
+# layout
+bspc desktop -f term
+sleep 1
+
+urxvt --name term --hold -e zsh -c 'tmux new -s default "tmux source-file ~/.tmux/default"' &
+
+sleep 1
+bspc node focused -t pseudo_tiled
+bspc node focused -z left -225 0
+bspc node focused -z top 0 -100
+sleep 1
 bspc desktop -f mpd 
-urxvt -name ncmpcpp -e ncmpcpp &
+urxvt --name ncmpcpp -e ncmpcpp &
 sleep 1
 bspc node -p east &
 sleep 1
-urxvt -name vis -b 0 -e vis &
+urxvt --name vis -e vis &
 sleep 1
 bspc node -f west
 sleep 1
 bspc desktop -f browser
-firefox &
+chromium &
 sleep 3
 bspc node -o 0.74
 ~/Telegram/Telegram &
+sleep 3
+bspc desktop -f term
